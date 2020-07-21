@@ -1,0 +1,11 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "Gabriel",
+            "sobrenome": "de Souza",
+            "email": "gabrielbsouzadev@gmail.com",
+            "senha": "$2y$10$zi31ezpiQgIpTvQc\/g4veu0j0Eb37oADGweglYkcMOSUjUUqePFqC"
+        }
+    ]
+}

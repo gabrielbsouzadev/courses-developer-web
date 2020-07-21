@@ -1,0 +1,17 @@
+
+body{
+  margin:0;
+  color: ivory;
+  font-weight: 100;
+
+}   
+header nav {
+  background: url("../css/img/header/bg.jpg");
+}
+
+
+footer{    
+    text-align: center;
+    background: url("../css/img/footer/bg.jpg");
+    padding: 10px 0;
+}

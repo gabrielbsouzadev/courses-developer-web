@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/meumodelo.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>index.png</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">td img {display: block;}</style>
+<!--Fireworks CS6 Dreamweaver CS6 target.  Created Fri Dec 07 10:26:01 GMT-0200 2012-->
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+//-->
+</script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body bgcolor="#ffffff" onload="MM_preloadImages('template/index_r2_c12_s2.png','template/index_r3_c14_s2.png','template/index_r6_c1_s2.png','template/index_r6_c5_s2.png','template/index_r6_c6_s2.png','template/index_r6_c9_s2.png','template/index_r6_c10_s2.png','template/index_r6_c15_s2.png')">
+<table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="1024">
+<!-- fwtable fwsrc="layout.fw.png" fwpage="Página 1" fwbase="index.png" fwstyle="Dreamweaver" fwdocid = "1336528323" fwnested="0" -->
+  <tr>
+   <td><img src="template/spacer.gif" width="145" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="2" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="144" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="2" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="144" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="2" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="144" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="2" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="144" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="2" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="66" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="45" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="22" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="12" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="1" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="86" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="61" height="1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="1" height="1" alt="" /></td>
+  </tr>
+
+  <tr>
+   <td colspan="17"><img name="index_r1_c1" src="template/index_r1_c1.png" width="1024" height="22" id="index_r1_c1" alt="" /></td>
+   <td><img src="template/spacer.gif" width="1" height="22" alt="" /></td>
+  </tr>
+  <tr>
+   <td rowspan="4" colspan="11"><img name="index_r2_c1" src="template/index_r2_c1.png" width="797" height="240" id="index_r2_c1" alt="" /></td>
+   <td rowspan="3"><a href="javascript:;" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('index_r2_c12','','template/index_r2_c12_s2.png',1)"><img name="index_r2_c12" src="template/index_r2_c12.png" width="45" height="19" id="index_r2_c12" alt="" /></a></td>
+   <td colspan="5"><img name="index_r2_c13" src="template/index_r2_c13.png" width="182" height="2" id="index_r2_c13" alt="" /></td>
+   <td><img src="template/spacer.gif" width="1" height="2" alt="" /></td>
+  </tr>
+  <tr>
+   <td rowspan="3"><img name="index_r3_c13" src="template/index_r3_c13.png" width="22" height="238" id="index_r3_c13" alt="" /></td>
+   <td colspan="3"><a href="javascript:;" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('index_r3_c14','','template/index_r3_c14_s2.png',1)"><img name="index_r3_c14" src="template/index_r3_c14.png" width="99" height="16" id="index_r3_c14" alt="" /></a></td>
+   <td rowspan="3"><img name="index_r3_c17" src="template/index_r3_c17.png" width="61" height="238" id="index_r3_c17" alt="" /></td>
+   <td><img src="template/spacer.gif" width="1" height="16" alt="" /></td>
+  </tr>
+  <tr>
+   <td rowspan="2" colspan="3"><img name="index_r4_c14" src="template/index_r4_c14.png" width="99" height="222" id="index_r4_c14" alt="" /></td>
+   <td><img src="template/spacer.gif" width="1" height="1" alt="" /></td>
+  </tr>
+  <tr>
+   <td><img name="index_r5_c12" src="template/index_r5_c12.png" width="45" height="221" id="index_r5_c12" alt="" /></td>
+   <td><img src="template/spacer.gif" width="1" height="221" alt="" /></td>
+  </tr>
+  <tr>
+   <td><a href="javascript:;" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('index_r6_c1','','template/index_r6_c1_s2.png',1)"><img name="index_r6_c1" src="template/index_r6_c1.png" width="145" height="38" id="index_r6_c1" alt="" /></a></td>
+   <td colspan="3"><a href="produtos.php"><img name="index_r6_c2" src="template/index_r6_c2.png" width="148" height="38" id="index_r6_c2" alt="" /></a></td>
+   <td><a href="javascript:;" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('index_r6_c5','','template/index_r6_c5_s2.png',1)"><img name="index_r6_c5" src="template/index_r6_c5.png" width="144" height="38" id="index_r6_c5" alt="" /></a></td>
+   <td colspan="3"><a href="javascript:;" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('index_r6_c6','','template/index_r6_c6_s2.png',1)"><img name="index_r6_c6" src="template/index_r6_c6.png" width="148" height="38" id="index_r6_c6" alt="" /></a></td>
+   <td><a href="javascript:;" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('index_r6_c9','','template/index_r6_c9_s2.png',1)"><img name="index_r6_c9" src="template/index_r6_c9.png" width="144" height="38" id="index_r6_c9" alt="" /></a></td>
+   <td colspan="5"><a href="javascript:;" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('index_r6_c10','','template/index_r6_c10_s2.png',1)"><img name="index_r6_c10" src="template/index_r6_c10.png" width="147" height="38" id="index_r6_c10" alt="" /></a></td>
+   <td colspan="3"><a href="javascript:;" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('index_r6_c15','','template/index_r6_c15_s2.png',1)"><img name="index_r6_c15" src="template/index_r6_c15.png" width="148" height="38" id="index_r6_c15" alt="" /></a></td>
+   <td><img src="template/spacer.gif" width="1" height="38" alt="" /></td>
+  </tr>
+  <tr>
+   <td colspan="17" valign="top"><!-- InstanceBeginEditable name="body" --><?php include "principal.php"; ?><!-- InstanceEndEditable --></td>
+   <td><img src="template/spacer.gif" width="1" height="470" alt="" /></td>
+  </tr>
+  <tr>
+   <td colspan="17"><img name="rodape" src="template/rodape.png" width="1024" height="30" id="rodape" alt="" /></td>
+   <td><img src="template/spacer.gif" width="1" height="30" alt="" /></td>
+  </tr>
+</table>
+</body>
+<!-- InstanceEnd --></html>

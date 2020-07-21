@@ -1,0 +1,51 @@
+{
+    "usuarios": [
+        {
+            "nome": "xablau",
+            "email": "xablau@gmail.com",
+            "senha": "123456"
+        },
+        {
+            "nome": "Gabriel",
+            "sobrenome": "de Souza",
+            "email": "gabriel@creativehouse.com.br",
+            "senha": "123456"
+        },
+        {
+            "nome": "Gabriel",
+            "sobrenome": "de Souza",
+            "email": "gabriel@creativehouse.com.br",
+            "senha": "123456"
+        },
+        {
+            "nome": "Gabriel",
+            "sobrenome": "de Souza",
+            "email": "gabriel@creativehouse.com.br",
+            "senha": "3f3r"
+        },
+        {
+            "nome": "MAteuzzo",
+            "sobrenome": "Souza",
+            "email": "marketing@goodstorage.com.br",
+            "senha": "odko"
+        },
+        {
+            "nome": "Fernanda ",
+            "sobrenome": "Gentil",
+            "email": "fernandagentil@gmail.com",
+            "senha": "342143"
+        },
+        {
+            "nome": "Gabriel",
+            "sobrenome": "de Souza",
+            "email": "gabrielbsouza95@gmail.com",
+            "senha": "320932i09i"
+        },
+        {
+            "nome": "Gabriel",
+            "sobrenome": "de Souza",
+            "email": "gabriel@creativehouse.com.br",
+            "senha": "0--0ODSF-0O"
+        }
+    ]
+}

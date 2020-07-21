@@ -1,0 +1,103 @@
+{
+    "clientes": [
+        {
+            "nome": "Gabriel Bezerra de Souza",
+            "email": "gabrielbsouzadev@gmail.com",
+            "telefone": "11959235700",
+            "endereco1": "Av Ministro Petronio Portela",
+            "cidade": "S\u00e3o Paulo",
+            "estado": "SP",
+            "cep": "02802120",
+            "msg": "Mensagem",
+            "contatoRadio": "whatsapp"
+        },
+        {
+            "nome": "Gabriel Bezerra de Souza",
+            "email": "gabrielbsouzadev@gmail.com",
+            "telefone": "11959235700",
+            "endereco1": "Av Ministro Petronio Portela",
+            "cidade": "S\u00e3o Paulo",
+            "estado": "SP",
+            "cep": "02802120",
+            "msg": "Mensagem",
+            "contatoRadio": "whatsapp"
+        },
+        {
+            "nome": "Edneide Bezerra de Souza",
+            "email": "edneide@gmail.com",
+            "telefone": "11959235700",
+            "endereco1": "Av Ministro Petronio Portela",
+            "cidade": "S\u00e3o Paulo",
+            "estado": "SP",
+            "cep": "02802120",
+            "msg": "Agendar manicure",
+            "contatoRadio": "whatsapp"
+        },
+        {
+            "nome": "Av Ministro Petronio Portela",
+            "email": "gabrielbsouzadev@gmail.com",
+            "telefone": "11959235700",
+            "endereco1": "Av Ministro Petronio Portela",
+            "cidade": "S\u00e3o Paulo",
+            "estado": "SP",
+            "cep": "02802120",
+            "msg": "Agendar corte e barba",
+            "contatoRadio": "email"
+        },
+        {
+            "nome": "Gabriel Bezerra de Souza",
+            "email": "gabrielbsouzadev@gmail.com",
+            "telefone": "11959235700",
+            "endereco1": "Av Ministro Petronio Portela",
+            "cidade": "S\u00e3o Paulo",
+            "estado": "SP",
+            "cep": "02802120",
+            "msg": "opkvfpok",
+            "contatoRadio": "whatsapp"
+        },
+        {
+            "nome": "Claudio",
+            "email": "gabrielbsouzadev@gmail.com",
+            "telefone": "11959235700",
+            "endereco1": "Av Ministro Petronio Portela",
+            "cidade": "S\u00e3o Paulo",
+            "estado": "SP",
+            "cep": "02802120",
+            "msg": "Msgn",
+            "contatoRadio": "whatsapp"
+        },
+        {
+            "nome": "Davi",
+            "email": "davi@gmail.com",
+            "telefone": "11959235700",
+            "endereco1": "Av Ministro Petronio Portela",
+            "cidade": "S\u00e3o Paulo",
+            "estado": "SP",
+            "cep": "02802120",
+            "msg": "MSg2",
+            "contatoRadio": "whatsapp"
+        },
+        {
+            "nome": "Gabriel Bezerra de Souza",
+            "email": "gabrielbsouzadev@gmail.com",
+            "telefone": "11959235700",
+            "endereco1": "Av Ministro Petr\u00f4nio Portela",
+            "cidade": "S\u00e3o Paulo",
+            "estado": "SP",
+            "cep": "02802120",
+            "msg": "Msgn \u00f3",
+            "contatoRadio": "whatsapp"
+        },
+        {
+            "nome": "Gabriel Bezerra de Souza",
+            "email": "marai@gmail.com",
+            "telefone": "11959235702",
+            "endereco1": "Av Ministro Petronio Portela",
+            "cidade": "S\u00e3o Paulo",
+            "estado": "SP",
+            "cep": "02802120",
+            "msg": "oaisjoiasjoi",
+            "contatoRadio": "whatsapp"
+        }
+    ]
+}

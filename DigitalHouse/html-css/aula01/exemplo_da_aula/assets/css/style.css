@@ -1,0 +1,127 @@
+/* RESETS */
+* {
+    /* border: 1px solid rgb(243, 29, 29);
+    background-color: rgba(243,29,29,0.1); */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+a:hover {
+    color: rgb(24, 9, 107);
+}
+ul {
+    list-style: none;
+}
+h4,
+li:first-child {
+    margin-top: 12px;
+}
+li:last-child {
+    margin-bottom: 20px;
+}
+#meuHeader,
+aside p {
+    font-weight: bold;
+}
+header div {
+    display: inline-block;
+    text-align: right;
+    width: calc( 100% - 128px);
+    font-size: 16px;
+}
+header div p:first-child {
+    font-size: 2em;
+}
+header div p:first-child i {
+    font-size: 1.2em;
+    transition: filter 0.8s ease-in-out;
+}
+header div p:first-child i:hover {
+    filter: drop-shadow( 2px 2px 2px rgb(255, 166, 0));
+}
+/* section .destaque {
+    color: red;
+} */
+.info-inicial,
+aside {
+    margin: 20px 40px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(218, 217, 216);
+}
+.meio-a-meio {
+    width: calc(50% - 3px);
+    display: inline-block;
+    vertical-align: text-top;
+}
+header,
+footer {
+    background-color: powderblue;
+    padding: 16px;
+    background-image: linear-gradient(45deg, #6caeb6, #b0e0e6);
+}
+
+header {
+    filter: drop-shadow(0 3px 3px rgba(0,0,0,0.5));
+}
+
+footer {
+    filter: drop-shadow(0 -3px 3px rgba(0,0,0,0.5));
+    text-align: center;
+    font-size: 18px;
+}
+section:first-child {
+    text-align: center;
+}
+section:not(:first-child) {
+    margin-top: 20px;
+}
+aside section h3 {
+    text-align: center;
+}
+#meuHeader img {
+    border-radius: 50%;
+    transition: all 0.8s ease-in-out;
+}
+#meuHeader img:hover {
+    transform: rotate(30deg) scale(1.05);
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+.info-inicial section h2 {
+    margin-bottom: 20px;
+}
+.info-inicial img {
+    transition: all 0.8s ease-in-out;
+}
+.info-inicial img:hover {
+    filter: brightness(0.5);
+}
+article.portfolio {
+    display: inline-block;
+    width: 30%;
+}
+article.portfolio p {
+    text-align: justify;
+    padding: 10px;
+}
+a#irParaTopo[href="#meuHeader"] {
+    background-color: crimson;
+    color: #fff;
+    text-transform: lowercase;
+    border-radius: 30px;
+    display: block;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    padding: 5px 10px;
+    border: 2px solid;
+}

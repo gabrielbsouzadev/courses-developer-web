@@ -1,0 +1,170 @@
+/* CSS Document */
+
+
+.cabecalho{
+
+background-image: url(../imagens/fundomenu.png);
+width: 840px;
+height: 50px;
+margin: auto;
+color: white;
+padding: 8px;
+border-radius: 5px;
+text-align: left;
+font-size: 16px;
+font-family: arial;
+	
+	
+}
+
+
+.cabecalho a{
+	
+border: none;
+padding: 6px;
+text-decoration: none;
+font-family: Arial;
+color: #ccc;
+
+	
+}
+
+.cabecalho a:hover{
+	
+color: #FFF;
+cursos: pointer;
+	
+}
+
+
+.carrinho{
+	float: right;
+	border-radius: 10px;
+	
+}
+
+
+.caixa{
+	
+	background: white;
+	
+	float: left;
+	width: 150px;
+	height: 280px;
+	text-align: center;
+	border: 1px solid #E2E2E2;
+	border-radius: 10px;
+
+	
+}
+.conteudo{
+
+background: white;
+width: 608px;
+height: 544px;
+margin: auto;
+
+}
+
+.botao {
+
+width: 95px;
+height: 30px;
+border-radius: 5px;	
+background-image: url(../imagens/bt1.fw.png);
+color: white;
+	
+}
+
+
+.botao:hover {
+width: 95px;
+height: 30px;
+border-radius: 5px;	
+background-image: url(../imagens/bt2.fw.png);
+color: white;	
+}
+	
+.caixa2 {
+	background="white";
+	float:left;
+	width: 250px;
+	height: 500px;
+	text-align: center;
+	border: 1px solid #E2E2E2;
+	border-radius: 10px;
+	font-family: arial;
+}
+
+
+
+.caixadesc{
+	
+	background="white";
+	float:left;
+	width: 250px;
+	height: auto;
+	text-align: left;
+	border: 1px solid #E2E2E2;
+	border-radius: 10px;
+	padding: 15px;
+	font-family: arial;
+	text-size: 15px; 
+}
+
+
+.tablecarrinho{
+	background-color: #EBEBEB;
+	border: 1px solid #666;
+	padding-left: 60px;
+	width: 500px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.nome{
+	width: 140px;
+	height: 60px;
+	
+}
+
+#paginador {
+	padding: 6px;
+	
+}
+
+#paginador a{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	vertical-align: baseline;
+	cursor: pointer;
+	text-decoration: none;
+	font: 12px Arial;
+	padding: .5em 1em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	zoz- -box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	border-radius: 3px;
+	color: #d7d7d7;
+	border: solid 1px #333;
+	background: #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
+	background: -moz-linear-gradient(top, #666, #000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#000000');
+}
+
+
+	#paginador a:hover{
+	text-decoration: none;
+	background: #000;
+		background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#000));
+	background: -moz-linear-gradient(top, #444, #000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000');
+	}
+
+
+	
+	
+	

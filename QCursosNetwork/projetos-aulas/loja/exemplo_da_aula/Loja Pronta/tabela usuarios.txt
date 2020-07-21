@@ -1,0 +1,10 @@
+CREATE TABLE usuarios (
+id INT NOT NULL AUTO_INCREMENT, 
+nome varchar(30) null,
+usuario varchar (30) null,
+pass varchar (30) null,
+permicoes int (1) null,
+imagem varchar (100) null,
+data date null,
+primary key(id)
+);
