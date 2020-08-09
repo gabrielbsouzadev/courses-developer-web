@@ -35,10 +35,18 @@ for (let index = 0; index < pacientes.length; index++) {
     }
 
     if (pesoEhValido && alturaEhValida) {
-        var imc = peso / (altura * altura);
-        tdImc.textContent = imc.toFixed(2);
+        var imc = calculaImc(peso, altura);
+        tdImc.textContent = imc;
     }
 
+}
+
+function calculaImc(peso, altura) {
+    var imc = 0;
+    
+    imc = peso / (altura * altura);
+
+    return imc.toFixed(2);
 }
 
 // titulo.addEventListener("click", mostraMensagem);
@@ -53,3 +61,4 @@ for (let index = 0; index < pacientes.length; index++) {
 
 // //     console.log("Olá só uma função Anônima");
 // // });
+
