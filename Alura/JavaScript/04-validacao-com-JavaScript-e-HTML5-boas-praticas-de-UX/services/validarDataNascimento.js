@@ -1,4 +1,5 @@
 export const validarDataNascimento = input => {
+    alert(input.value);
     const dataNascimento = new Date (input.value); //04/06/1995
     const dataAtual = new Date (); //2020
 
