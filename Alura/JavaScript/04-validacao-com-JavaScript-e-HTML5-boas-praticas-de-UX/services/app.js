@@ -5,6 +5,10 @@ window.onload = () => {
     
     inputs.forEach(input => {
         input.addEventListener("input", () => {
+            validarInput(input, false);
+        });
+
+        input.addEventListener("blur", () => {
             validarInput(input);
         });
     });
