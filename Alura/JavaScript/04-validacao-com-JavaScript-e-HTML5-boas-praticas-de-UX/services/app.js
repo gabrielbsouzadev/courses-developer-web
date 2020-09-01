@@ -15,7 +15,7 @@ window.onload = () => {
                 fractionDigits: 2,
                 decimalSeparator: ',',
                 thousandsSeparator: '.',
-                cursor: 'move'
+                cursor: 'end' //Define em qual posição ficara o cursor
             });
         }
 
