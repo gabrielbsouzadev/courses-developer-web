@@ -1,3 +1,4 @@
+import { validarRG } from "./validarRG.js";
 import { validarDataNascimento } from "./validarDataNascimento.js";
 import { validarCPF } from "./validarCPF.js";
 import { recuperarEndereco } from "./recuperarEndereco.js";
@@ -29,10 +30,13 @@ const retornarMensagemDeErro = (tipo, validity) => {
         },
         cpf: {
             valueMissing: "O CPF é necessário",
-            customError: "Este não é um CPF válido"
+            customError: "Este não é um CPF válido",
+            tooShort: "Este não é um CPF válido"
         },
         rg: {
-            valueMissing: "O RG é necessário"
+            valueMissing: "O RG é necessário",
+            customError: "Este não é um RG válido",
+            tooShort: "Este não é um Rg válido"
         },
         cep: {
             valueMissing: "O CEP é necessário",
@@ -79,7 +83,8 @@ export const validarInput = (input, adicionarErro = true) => {
     const validadoresEspecificos = {
         dataNascimento: input => validarDataNascimento(input),
         cpf: input => validarCPF(input),
-        cep: input => recuperarEndereco(input)
+        cep: input => recuperarEndereco(input),
+        rg: input => validarRG(input),
     };
 
     if (validadoresEspecificos[tipo]) {
