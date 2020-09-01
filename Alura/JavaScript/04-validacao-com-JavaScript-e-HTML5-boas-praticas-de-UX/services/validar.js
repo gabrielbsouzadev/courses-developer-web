@@ -1,4 +1,6 @@
 import { validarDataNascimento } from "./validarDataNascimento.js";
+import { validarCPF } from "./validarCPF.js";
+import { recuperarEndereco } from "./recuperarEndereco.js";
 
 const retornarMensagemDeErro = (tipo, validity) => {
     let mensagemDeErro = "";
@@ -6,7 +8,9 @@ const retornarMensagemDeErro = (tipo, validity) => {
         "valueMissing", 
         "typeMismatch", 
         "tooShort", 
-        "rangeUnderflow"
+        "rangeUnderflow",
+        "customError",
+        "patternMismatch",
     ];
 
     const mensagensDeErro = {
@@ -24,13 +28,15 @@ const retornarMensagemDeErro = (tipo, validity) => {
             customError: "A idade minima é 18 anos"
         },
         cpf: {
-            valueMissing: "O CPF é necessário"
+            valueMissing: "O CPF é necessário",
+            customError: "Este não é um CPF válido"
         },
         rg: {
             valueMissing: "O RG é necessário"
         },
         cep: {
-            valueMissing: "O CEP é necessário"
+            valueMissing: "O CEP é necessário",
+            patternMismatch: "Este não é um CEP válido"
         },
         logradouro: {
             valueMissing: "O logradouro é necessário"
@@ -64,7 +70,9 @@ export const validarInput = (input, adicionarErro = true) => {
     
     const tipo = input.dataset.tipo;
     const validadoresEspecificos = {
-        dataNascimento: (input) => validarDataNascimento(input)
+        dataNascimento: input => validarDataNascimento(input),
+        cpf: input => validarCPF(input),
+        cep: input => recuperarEndereco(input)
     };
 
     if (validadoresEspecificos[tipo]) {
