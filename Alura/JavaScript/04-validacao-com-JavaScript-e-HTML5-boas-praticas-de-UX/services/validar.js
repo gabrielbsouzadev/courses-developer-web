@@ -36,7 +36,8 @@ const retornarMensagemDeErro = (tipo, validity) => {
         },
         cep: {
             valueMissing: "O CEP é necessário",
-            patternMismatch: "Este não é um CEP válido"
+            patternMismatch: "Este não é um CEP válido",
+            customError: "Este não é um CEP válido"
         },
         logradouro: {
             valueMissing: "O logradouro é necessário"
@@ -46,6 +47,12 @@ const retornarMensagemDeErro = (tipo, validity) => {
         },
         estado: {
             valueMissing: "O Estado é necessário"
+        },
+        preco: {
+            valueMissing: "O Preço é necessário"
+        },
+        nomeProduto: {
+            valueMissing: "O nome do produto é necessário"
         }
     };
 

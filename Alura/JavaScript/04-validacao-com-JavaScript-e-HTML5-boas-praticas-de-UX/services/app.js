@@ -1,9 +1,24 @@
-import { validarInput } from "./validar.js";
+import {
+    validarInput
+} from "./validar.js";
 
 window.onload = () => {
     const inputs = document.querySelectorAll("input");
-    
+
     inputs.forEach(input => {
+        if (input.dataset.tipo === 'preco') {
+            SimpleMaskMoney.setMask(input, {
+                allowNegative: false,
+                negativeSignAfter: false,
+                prefix: 'R$ ',
+                fixed: true,
+                fractionDigits: 2,
+                decimalSeparator: ',',
+                thousandsSeparator: '.',
+                cursor: 'move'
+            });
+        }
+
         input.addEventListener("input", () => {
             validarInput(input, false);
         });
@@ -12,4 +27,4 @@ window.onload = () => {
             validarInput(input);
         });
     });
-}; 
+};
