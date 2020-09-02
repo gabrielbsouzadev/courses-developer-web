@@ -108,7 +108,11 @@ const ehUmCFPComNumerosRepetidos = cpf => {
     const cpfNumeros = input.value
       .replace(/\D/g, "");
   
+<<<<<<< HEAD
     //console.log(cpfNumeros);
+=======
+    console.log(cpfNumeros);
+>>>>>>> a2cd36698521905eff4802f9553b65d7aaad6828
   
     if (ehUmCFPComNumerosRepetidos(cpfNumeros)) {
       input.setCustomValidity("Este não é um CPF válido");

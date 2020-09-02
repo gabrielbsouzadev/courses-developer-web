@@ -21,7 +21,11 @@ export const recuperarEndereco = input => {
 
             preencherCampos(data);
 
+<<<<<<< HEAD
             input.setCustomValidity("");
+=======
+            input.setCustomvalidity("");
+>>>>>>> a2cd36698521905eff4802f9553b65d7aaad6828
             return;
         });
     }
