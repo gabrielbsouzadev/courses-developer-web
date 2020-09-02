@@ -1,3 +1,11 @@
+//implementando buscar pacientes ao carregar a pagina
+// window.onload = () => {
+//     var xhr = new XMLHttpRequest();
+//     xhr.open("GET", "https://api-pacientes.herokuapp.com/pacientes");
+
+//     xhr.send();
+// }
+
 var botaoAdicionar = document.querySelector("#buscar-pacientes");
 
 botaoAdicionar.addEventListener("click", function() {
