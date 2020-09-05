@@ -146,7 +146,7 @@ function desenharGraficos() {
     tabela.addRows([
         //posições no array
         ['Educação', 2000, 2000, 'blue'], //0
-        ['Transporte', 500, 500 , 'grey'], //1
+        ['Transporte', 500, 500, 'grey'], //1
         ['Lazer', 230, 230, 'grey'], //2
         ['Saúde', 50, 50, 'grey'], //3
         ['Cartão de Crédito', 900, 900, '#8904b1'], //4
@@ -163,10 +163,11 @@ function desenharGraficos() {
             },
             textPosition: 'none'
         },
-        legend: 'none'
+        legend: 'none',
+        hAxis: { gridlines: { color: 'transparent' }, format: 'currency', textPosition: 'none' }
     }
 
-    var grafico = new google.visualization.ColumnChart(document.getElementById('graficoColunaSurpresa'));
+    var grafico = new google.visualization.BarChart(document.getElementById('graficoColunaSurpresa'));
     grafico.draw(tabela, opcoes);
 
 }
