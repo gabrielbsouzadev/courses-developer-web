@@ -136,7 +136,7 @@ function desenharGraficos() {
     tabela.addColumn('string', 'categorias');
     tabela.addColumn('number', 'valores');
     tabela.addColumn({
-        type: 'number',
+        type: 'string',
         role: 'annotation'
     });
     tabela.addColumn({
@@ -145,13 +145,15 @@ function desenharGraficos() {
     });
     tabela.addRows([
         //posições no array
-        ['Educação', 2000, 2000, 'blue'], //0
-        ['Transporte', 500, 500, 'grey'], //1
-        ['Lazer', 230, 230, 'grey'], //2
-        ['Saúde', 50, 50, 'grey'], //3
-        ['Cartão de Crédito', 900, 900, '#8904b1'], //4
-        ['Alimentação', 260, 260, 'grey'], //5
+        ['Educação', 2000, 'R$2.000,00', 'blue'], //0
+        ['Transporte', 500, 'R$500,00', 'grey'], //1
+        ['Lazer', 230, 'R$230,00', 'grey'], //2
+        ['Saúde', 50, 'R$50,00', 'grey'], //3
+        ['Cartão de Crédito', 900, 'R$900,00', '#8904b1'], //4
+        ['Alimentação', 260, 'R$260,00', 'grey'], //5
     ]);
+
+    tabela.sort([{ column: 1, desc: true}]);
 
     var opcoes = {
         title: 'Tipos de Gastos',
@@ -164,7 +166,12 @@ function desenharGraficos() {
             textPosition: 'none'
         },
         legend: 'none',
-        hAxis: { gridlines: { color: 'transparent' }, format: 'currency', textPosition: 'none' }
+        hAxis: {
+            gridlines: { color: 'transparent' },
+            format: 'currency',
+            textPosition: 'none'
+        },
+        annotations: {alwaysOutside: true}
     }
 
     var grafico = new google.visualization.BarChart(document.getElementById('graficoColunaSurpresa'));
