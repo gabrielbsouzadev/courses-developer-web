@@ -2,8 +2,10 @@ function desenharGraficos() {
 
     //Grafico de Pizza
     var tabela = new google.visualization.DataTable();
+    //Colunas
     tabela.addColumn('string', 'categorias');
     tabela.addColumn('number', 'valores');
+    //linhas
     tabela.addRows([
         //posições no array
         ['Educação', 2000], //0
@@ -13,7 +15,7 @@ function desenharGraficos() {
         ['Cartão de Crédito', 900],
         ['Alimentação', 260]
     ]);
-
+    //opções que customizam o grafico
     var opcoes = {
         title: 'Tipos de Gastos',
         height: 400,
@@ -48,16 +50,17 @@ function desenharGraficos() {
             }
         }
     };
-
+    //desenhando grafico
     var grafico = new google.visualization.PieChart(document.getElementById('graficoPizza'));
     grafico.draw(tabela, opcoes);
 
 
     //Grafico de Linha
     tabela = new google.visualization.DataTable();
+    //Colunas
     tabela.addColumn('string', 'mês');
     tabela.addColumn('number', 'gastos');
-
+    //linhas
     tabela.addRows([
         ['jan', 800],
         ['fev', 400],
@@ -73,7 +76,7 @@ function desenharGraficos() {
         ['dez', 720]
     ]);
 
-
+    //opções
     var opcoes = {
         title: 'Gastos por mês',
         width: 650,
@@ -88,7 +91,7 @@ function desenharGraficos() {
         curveType: 'function',
         legend: 'none'
     }
-
+    //desenhando grafico
     var grafico = new google.visualization.LineChart(document.getElementById('graficoLinha'));
     grafico.draw(tabela, opcoes);
 
@@ -110,7 +113,7 @@ function desenharGraficos() {
         ['dez', 3000, 1740]
 
     ]);
-
+    //opções que customizam o grafico
     var opcoes = {
         title: 'Gastos por mês',
         width: 800,
@@ -127,12 +130,13 @@ function desenharGraficos() {
         }
 
     }
-
+    //Desenhando o grafico
     var grafico = new google.visualization.ColumnChart(document.getElementById('graficoColuna'));
     grafico.draw(tabela, opcoes);
 
-    //Colunas Surpresa
+    //Grafico de Barras
     var tabela = new google.visualization.DataTable();
+    //Colunas
     tabela.addColumn('string', 'categorias');
     tabela.addColumn('number', 'valores');
     tabela.addColumn({
@@ -143,6 +147,8 @@ function desenharGraficos() {
         type: 'string',
         role: 'style'
     });
+
+    //Linhas
     tabela.addRows([
         //posições no array
         ['Educação', 2000, 'R$2.000,00', 'blue'], //0
@@ -152,9 +158,9 @@ function desenharGraficos() {
         ['Cartão de Crédito', 900, 'R$900,00', '#8904b1'], //4
         ['Alimentação', 260, 'R$260,00', 'grey'], //5
     ]);
-
-    tabela.sort([{ column: 1, desc: true}]);
-
+    //Ordenando por ordem decrescente
+    tabela.sort([{ column: 1, desc: true }]);
+    //opções
     var opcoes = {
         title: 'Tipos de Gastos',
         height: 400,
@@ -171,9 +177,9 @@ function desenharGraficos() {
             format: 'currency',
             textPosition: 'none'
         },
-        annotations: {alwaysOutside: true}
+        annotations: { alwaysOutside: true }
     }
-
+    //Desenhando grafico
     var grafico = new google.visualization.BarChart(document.getElementById('graficoColunaSurpresa'));
     grafico.draw(tabela, opcoes);
 
