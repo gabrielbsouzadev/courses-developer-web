@@ -183,4 +183,15 @@ function desenharGraficos() {
     var grafico = new google.visualization.BarChart(document.getElementById('graficoColunaSurpresa'));
     grafico.draw(tabela, opcoes);
 
+    //grafico de barras com arquivo json
+    var dadosJson = $.ajax({
+        url: 'dados.json',
+        dataType: 'json',
+        async: false
+    }).responseText;
+
+    var tabela = new.visualization.DataTable(dadosJson);
+
+    var grafico = new google.visualization.BarChart(document.getDocumentById('graficoBarrasJson'));
+    grafico.draw(tabela);
 }
