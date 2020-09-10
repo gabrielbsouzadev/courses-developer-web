@@ -139,8 +139,8 @@ function desenharGraficos() {
     //Colunas
     tabela.addColumn('string', 'categorias');
     tabela.addColumn('number', 'valores');
-    tabela.addColumn({type: 'string', role:'annotation'});
-    tabela.addColumn({type: 'string', role:'style'});
+    tabela.addColumn({ type: 'string', role: 'annotation' });
+    tabela.addColumn({ type: 'string', role: 'style' });
     //linhas
     tabela.addRows([
         //posições no array
@@ -178,52 +178,36 @@ function desenharGraficos() {
     var grafico = new google.visualization.BarChart(document.getElementById('graficoBarras')); grafico.draw(tabela, opcoes);
 
 
-    // //Grafico de Barras
-    // var tabela = new google.visualization.DataTable();
-    // //Colunas
-    // tabela.addColumn('string', 'categorias');
-    // tabela.addColumn('number', 'valores');
-    // tabela.addColumn({
-    //     type: 'string',
-    //     role: 'annotation'
-    // });
-    // tabela.addColumn({
-    //     type: 'string',
-    //     role: 'style'
-    // });
+    //grafico de barras com arquivo json
+    var dadosJson = $.ajax({
+        url: 'dados.json',
+        dataType: 'json',
+        async: false
+    }).responseText;
 
-    // //Linhas
-    // tabela.addRows([
-    //     //posições no array
-    //     ['Educação', 2000, 'R$2.000,00', 'blue'], //0
-    //     ['Transporte', 500, 'R$500,00', 'grey'], //1
-    //     ['Lazer', 230, 'R$230,00', 'grey'], //2
-    //     ['Saúde', 50, 'R$50,00', 'grey'], //3
-    //     ['Cartão de Crédito', 900, 'R$900,00', '#8904b1'], //4
-    //     ['Alimentação', 260, 'R$260,00', 'grey'], //5
-    // ]);
-    // //Ordenando por ordem decrescente
-    // tabela.sort([{ column: 1, desc: true }]);
-    // //opções
-    // var opcoes = {
-    //     title: 'Tipos de Gastos',
-    //     height: 400,
-    //     width: 800,
-    //     vAxis: {
-    //         gridlines: {
-    //             count: 0
-    //         },
-    //         textPosition: 'none'
-    //     },
-    //     legend: 'none',
-    //     hAxis: {
-    //         gridlines: { color: 'transparent' },
-    //         format: 'currency',
-    //         textPosition: 'none'
-    //     },
-    //     annotations: { alwaysOutside: true }
-    // }
-    // //Desenhando grafico
-    // var grafico = new google.visualization.BarChart(document.getElementById('graficoColunaSurpresa'));
+    var tabela = new google.visualization.DataTable(dadosJson);
+
+    //Ordenando por ordem decrescente pelo indice 1
+    tabela.sort([{ column: 1, desc: true }]);
+
+    var opcoes = {
+        title: 'Usuários e Poupanças',
+        height: 800,
+        width: 800,
+        legend: 'none',
+        hAxis: {
+            gridlines: {
+                color: 'transparent'
+            },
+            textPosition: 'none'
+        },
+        annotations: { alwaysOutside: true }
+
+    }
+
+    var grafico = new google.visualization.BarChart(
+        document.getElementById('graficoBarrasJson'));
+
+    grafico.draw(tabela, opcoes);
 
 }
