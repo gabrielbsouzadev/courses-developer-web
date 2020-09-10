@@ -134,26 +134,39 @@ function desenharGraficos() {
     var grafico = new google.visualization.ColumnChart(document.getElementById('graficoColuna'));
     grafico.draw(tabela, opcoes);
 
+    var dadosJson = $.ajax({
+        // url: 'dados.json',
+        url: 'https://gist.githubusercontent.com/gabrielbsouzadev/dc63547be0fbc83173346d9aaeca9fad/raw/8f0e3fb30ccc5869cca9fa4b48b81d3739850649/dados.json',
+        dataType: 'json',
+        async: false
+    }).responseText;
+ 
     //Colunas surpresa
-    var tabela = new google.visualization.DataTable();
-    //Colunas
-    tabela.addColumn('string', 'categorias');
-    tabela.addColumn('number', 'valores');
-    tabela.addColumn({ type: 'string', role: 'annotation' });
-    tabela.addColumn({ type: 'string', role: 'style' });
-    //linhas
-    tabela.addRows([
-        //posições no array
-        ['Educação', 2000, 'R$2.000,00', 'blue'], //0
-        ['Transporte', 500, 'R$500,00', 'grey'], //1
-        ['Lazer', 230, 'R$230,00', 'grey'], //2
-        ['Saúde', 50, 'R$50,00', 'grey'], //3
-        ['Cartão de Crédito', 900, 'R$900,00', '#8904b1'], //4
-        ['Alimentação', 260, 'R$260,00', 'grey'], //5
-    ]);
+    var tabela = new google.visualization.DataTable(dadosJson);
+    
+    //Antes os dados eram pegos da tabela abaixo
+    // //Colunas
+    // tabela.addColumn('string', 'categorias');
+    // tabela.addColumn('number', 'valores');
+    // tabela.addColumn({ type: 'string', role: 'annotation' });
+    // tabela.addColumn({ type: 'string', role: 'style' });
+    // //linhas
+    // tabela.addRows([
+    //     //posições no array
+    //     ['Educação', 2000, 'R$2.000,00', 'blue'], //0
+    //     ['Transporte', 500, 'R$500,00', 'grey'], //1
+    //     ['Lazer', 230, 'R$230,00', 'grey'], //2
+    //     ['Saúde', 50, 'R$50,00', 'grey'], //3
+    //     ['Cartão de Crédito', 900, 'R$900,00', '#8904b1'], //4
+    //     ['Alimentação', 260, 'R$260,00', 'grey'], //5
+    // ]);
 
     //Ordenando por ordem decrescente pelo indice 1
     tabela.sort([{ column: 1, desc: true }]);
+
+    // //Pegando o Jason Através da função .toJason() pelo Consoloe
+    // var conversao = tabela.toJSON();
+    // console.log(conversao);
 
     //Opções que customizam o gráfico
     var opcoes = {
@@ -162,9 +175,8 @@ function desenharGraficos() {
         width: 800,
         vAxis: {
             gridlines: {
-                count: 0
+                count: 0, color: 'transparent'
             },
-            textPosition: 'none'
         },
         legend: 'none',
         hAxis: {
