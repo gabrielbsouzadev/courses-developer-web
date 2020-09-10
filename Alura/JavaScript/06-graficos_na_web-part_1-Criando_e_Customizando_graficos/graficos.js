@@ -152,9 +152,10 @@ function desenharGraficos() {
         ['Alimentação', 260, 'R$260,00', 'grey'], //5
     ]);
 
-    //Ordenando por ordem decrescente
+    //Ordenando por ordem decrescente pelo indice 1
     tabela.sort([{ column: 1, desc: true }]);
 
+    //Opções que customizam o gráfico
     var opcoes = {
         title: 'Tipos de Gastos',
         height: 400,
@@ -174,7 +175,7 @@ function desenharGraficos() {
         annotations: { alwaysOutside: true }
     }
     //Desenhando Gráfico
-    var grafico = new google.visualization.BarChart(document.getElementById('graficoColunaSurpresa')); grafico.draw(tabela, opcoes);
+    var grafico = new google.visualization.BarChart(document.getElementById('graficoBarras')); grafico.draw(tabela, opcoes);
 
 
     // //Grafico de Barras
