@@ -180,7 +180,8 @@ function desenharGraficos() {
 
     //grafico de barras com arquivo json
     var dadosJson = $.ajax({
-        url: 'dados.json',
+        // url: 'dados.json',
+        url: 'https://gist.githubusercontent.com/gabrielbsouzadev/e03bb703b3787268a6738701ba798098/raw/cb072dae350fb92b5ffc77712a1f443f23569533/dados.json',
         dataType: 'json',
         async: false
     }).responseText;
