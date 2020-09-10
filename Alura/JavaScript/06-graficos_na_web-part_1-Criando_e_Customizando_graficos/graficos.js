@@ -139,18 +139,39 @@ function desenharGraficos() {
     //Colunas
     tabela.addColumn('string', 'categorias');
     tabela.addColumn('number', 'valores');
+    tabela.addColumn({type: 'number', role:'annotation'});
+    tabela.addColumn({type: 'string', role:'style'});
     //linhas
     tabela.addRows([
         //posições no array
-        ['Educação', 2000], //0
-        ['Transporte', 500], /*1*/
-        ['Lazer', 230],
-        ['Saúde', 50],
-        ['Cartão de Crédito', 900],
-        ['Alimentação', 260]
+        ['Educação', 2000, 2000, 'blue'], //0
+        ['Transporte', 500, 500, 'grey'], /*1*/
+        ['Lazer', 230, 230, 'grey'],
+        ['Saúde', 50, 50, 'grey'],
+        ['Cartão de Crédito', 900, 900, '#8904b1'],
+        ['Alimentação', 260, 260, 'grey']
     ]);
 
-    var grafico =new google.visualization.ColumnChart(document.getElementById('graficoColunaSurpresa')); grafico.draw(tabela);
+    var opcoes = {
+        title: 'Tipos de Gastos',
+        height: 400,
+        width: 800,
+        vAxis: {
+            gridlines: {
+                count: 0
+            },
+            textPosition: 'none'
+        },
+        legend: 'none',
+        hAxis: {
+            gridlines: { color: 'transparent' },
+            // format: 'currency',
+            // textPosition: 'none'
+        },
+        // annotations: { alwaysOutside: true }
+    }
+
+    var grafico = new google.visualization.ColumnChart(document.getElementById('graficoColunaSurpresa')); grafico.draw(tabela, opcoes);
 
 
     // //Grafico de Barras
@@ -200,5 +221,5 @@ function desenharGraficos() {
     // }
     // //Desenhando grafico
     // var grafico = new google.visualization.BarChart(document.getElementById('graficoColunaSurpresa'));
-    
+
 }
