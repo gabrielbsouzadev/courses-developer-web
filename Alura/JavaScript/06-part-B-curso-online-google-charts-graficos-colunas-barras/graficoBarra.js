@@ -4,29 +4,76 @@ function desenharGraficoPizza() {
 
     tabela.addColumn('string', 'Categorias');
     tabela.addColumn('number', 'Tecnologia');
+    tabela.addColumn({
+        type: 'number',
+        role: 'annotation'
+    });
+    tabela.addColumn({
+        type: 'string',
+        role: 'style'
+    });
     tabela.addColumn('number', 'Marketing');
+    tabela.addColumn({
+        type: 'number',
+        role: 'annotation'
+    });
+    tabela.addColumn({
+        type: 'string',
+        role: 'style'
+    });
     tabela.addColumn('number', 'Administrativo');
+    tabela.addColumn({
+        type: 'number',
+        role: 'annotation'
+    });
+    tabela.addColumn({
+        type: 'string',
+        role: 'style'
+    });
     tabela.addColumn('number', 'Linhas de crédito');
+    tabela.addColumn({
+        type: 'number',
+        role: 'annotation'
+    });
+    tabela.addColumn({
+        type: 'string',
+        role: 'style'
+    });
     tabela.addColumn('number', 'Segurança');
+    tabela.addColumn({
+        type: 'number',
+        role: 'annotation'
+    });
+    tabela.addColumn({
+        type: 'string',
+        role: 'style'
+    });
     tabela.addColumn('number', 'Atendimento ao cliente');
-    // tabela.addColumn({
-    //     type: 'string',
-    //     role: 'style'
-    // });
-    // tabela.addColumn({
-    //     type: 'number',
-    //     role: 'annotation'
-    // });
+    tabela.addColumn({
+        type: 'number',
+        role: 'annotation'
+    });
+    tabela.addColumn({
+        type: 'string',
+        role: 'style'
+    });
 
     tabela.addRows([
-        //     ['Tecnologia', 47814, 'color:#a6a6a6', 47814],
-        //     ['Marketing', 22552, 'color:#a6a6a6', 22552],
-        //     ['Administrativo', 65243, 'color:#1b9af5', 65243],
-        //     ['Linhas de crédito', 55504, 'color:#a6a6a6', 55504],
-        //     ['Segurança', 86085, 'color:#f5921b', 86085],
-        //     ['Atendimento ao cliente', 12605, 'color:#a6a6a6', 12605]
+        //   ['Tecnologia', 47814, 47814, 12345, 'color:#a6a6a6', 12345],
+        //   ['Marketing', 22552, 22552, 6789, 'color:#a6a6a6', 6789],
+        //   ['Administrativo', 65243, 'color:#1b9af5', 65243],
+        //   ['Linhas de crédito', 55504, 'color:#a6a6a6', 55504],
+        //   ['Segurança', 86085, 'color:#f5921b', 86085],
+        //   ['Atendimento ao cliente', 12605, 'color:#a6a6a6', 12605]
 
-        ['Categorias', 47814, 22552, 65243, 55504, 86085, 12605]
+        ['Categorias',
+            47814, 47814, 'color:#a6a6a6',
+            22552, 22552, 'color:#a6a6a6',
+            65243, 65243, 'color:#1b9af5',
+            55504, 55504, 'color:#a6a6a6',
+            86085, 86085, 'color:#f5921b',
+            12605, 12605, 'color:#a6a6a6'
+        ]
     ]);
 
     tabela.sort({
@@ -45,26 +92,26 @@ function desenharGraficoPizza() {
         isStacked: true,
         //pieSliceText: 'value',
         //slices:
-        series: {
-            0: {
-                color: '#a6a6a6'
-            },
-            1: {
-                color: '#a6a6a6'
-            },
-            2: {
-                color: '#f5921b'
-            },
-            3: {
-                color: '#a6a6a6'
-            },
-            4: {
-                color: '#1b9af5'
-            },
-            5: {
-                color: '#a6a6a6'
-            }
-        },
+        // series: {
+        //     0: {
+        //         color: '#a6a6a6'
+        //     },
+        //     1: {
+        //         color: '#a6a6a6'
+        //     },
+        //     2: {
+        //         color: '#f5921b'
+        //     },
+        //     3: {
+        //         color: '#a6a6a6'
+        //     },
+        //     4: {
+        //         color: '#1b9af5'
+        //     },
+        //     5: {
+        //         color: '#a6a6a6'
+        //     }
+        // },
         //pieStartAngle: 4,
         titleTextStyle: {
             color: '#5e5851',
