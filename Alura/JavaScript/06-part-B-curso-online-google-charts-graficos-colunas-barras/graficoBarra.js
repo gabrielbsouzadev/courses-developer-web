@@ -81,7 +81,7 @@ function desenharGraficoPizza() {
         }
     };
 
-    var grafico = new google.visualization.BarChart(document.getElementById('graficoPizza'));
+    var grafico = new google.visualization.BarChart(document.getElementById('graficoBarra'));
     grafico.draw(tabela, opcoes);
 
 }
