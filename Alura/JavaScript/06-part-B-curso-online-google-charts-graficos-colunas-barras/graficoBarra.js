@@ -113,7 +113,7 @@ function desenharGraficoPizza() {
             }
         ],
         [
-            'Categorias', 
+            'Categorias',
             47814, 47814, 'color:#a6a6a6',
             22552, 22552, 'color:#a6a6a6',
             65243, 65243, 'color:#1b9af5',
@@ -137,7 +137,30 @@ function desenharGraficoPizza() {
         hAxis: {
             // textPosition: 'none',
         },
-        isStacked: true,
+
+        // The options
+        // for isStacked are:
+
+        // false— elements will not stack.This is the
+        // default option.
+        // true— stacks elements
+        // for all series at each domain value.
+        // 'percent'—
+        // stacks elements
+        // for all series at each domain value and rescales them such that they add up to 100 % ,
+        // with each element 's value calculated as a percentage of 100%.
+        // 'relative'—
+        // stacks elements
+        // for all series at each domain value and rescales them such that they add up to 1,
+        // with each element 's value calculated as a fraction of 1.
+        // 'absolute'—
+        // functions the same as isStacked: true.
+        // For 100 % stacking,
+        // the calculated value
+        // for each element will appear in the tooltip after its actual value.
+
+        isStacked: 'true',
+
         //pieSliceText: 'value',
         //slices:
         // series: {
