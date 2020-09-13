@@ -1,4 +1,4 @@
-function desenharGraficoPizza() {
+function desenharGraficoBarras() {
 
     // var tabela = new google.visualization.DataTable();
 
