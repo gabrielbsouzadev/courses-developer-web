@@ -132,10 +132,18 @@ function desenharGraficoPizza() {
     var opcoes = {
         title: 'Gastos por unidade de negócio',
         height: 400,
-        width: 1000,
+        width: 1300,
         legend: 'none',
         hAxis: {
-            // textPosition: 'none',
+            ticks: [
+                {v: 0, f: ''},
+                .165,
+                {v: .2428, f: '7,78%'},
+                {v: .4679, f: '22.51%'},
+                {v: .6594, f: '19,15%'},
+                {v: .9564, f: '29,7%'},
+                {v: 1, f: '4,35%'},
+            ]        
         },
 
         // The options
@@ -159,7 +167,7 @@ function desenharGraficoPizza() {
         // the calculated value
         // for each element will appear in the tooltip after its actual value.
 
-        isStacked: 'true',
+        isStacked: 'percent',
 
         //pieSliceText: 'value',
         //slices:
@@ -194,7 +202,7 @@ function desenharGraficoPizza() {
         chartArea: {
             left: 160,
             top: 100,
-            width: '70%',
+            width: '78%',
             height: '70%'
         }
     };
