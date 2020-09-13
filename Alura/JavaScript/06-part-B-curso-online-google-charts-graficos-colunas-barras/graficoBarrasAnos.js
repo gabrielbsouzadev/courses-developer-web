@@ -4,7 +4,7 @@ function desenharGraficoBarrasAnos() {
 
         [
             'Categorias',
-            'Tecnologia', {
+            'Atendimento ao cliente', {
                 role: 'annotation'
             }, {
                 role: 'style'
@@ -14,7 +14,7 @@ function desenharGraficoBarrasAnos() {
             }, {
                 role: 'style'
             },
-            'Administrativo', {
+            'Tecnologia', {
                 role: 'annotation'
             }, {
                 role: 'style'
@@ -24,12 +24,12 @@ function desenharGraficoBarrasAnos() {
             }, {
                 role: 'style'
             },
-            'Segurança', {
+            'Administrativo', {
                 role: 'annotation'
             }, {
                 role: 'style'
             },
-            'Atendimento ao cliente', {
+            'Segurança', {
                 role: 'annotation'
             }, {
                 role: 'style'
@@ -38,32 +38,32 @@ function desenharGraficoBarrasAnos() {
         [
             // new Date(2012, 0, 2),
             '2 de jan de 2012',
-            47814, 47814, 'color:#a6a6a6',
+            12605, 12605, 'color:#a6a6a6',
             22552, 22552, 'color:#a6a6a6',
-            65243, 65243, 'color:#1b9af5',
+            47814, 47814, 'color:#a6a6a6',
             55504, 55504, 'color:#a6a6a6',
-            86085, 86085, 'color:#f5921b',
-            12605, 12605, 'color:#a6a6a6'
+            65243, 65243, 'color:#1b9af5',
+            86085, 86085, 'color:#f5921b'
         ],
         [
             // new Date(2013, 0, 5),
             '5 de jan de 2013',
-            46020, 46020, 'color:#a6a6a6',
+            12137, 12137, 'color:#a6a6a6',
             22100, 22100, 'color:#a6a6a6',
-            64211, 64211, 'color:#1b9af5',
+            46020, 46020, 'color:#a6a6a6',
             50604, 50604, 'color:#a6a6a6',
-            84231, 84231, 'color:#f5921b',
-            12137, 12137, 'color:#a6a6a6'
+            64211, 64211, 'color:#1b9af5',
+            84231, 84231, 'color:#f5921b'
         ],
         [
             // new Date(2014, 0, 3),
             '3 de jan de 2014',
-            53244, 53244, 'color:#a6a6a6',
+            10530, 10530, 'color:#a6a6a6',
             21131, 21131, 'color:#a6a6a6',
-            65700, 65700, 'color:#1b9af5',
             45624, 45624, 'color:#a6a6a6',
-            82512, 82512, 'color:#f5921b',
-            12137, 12137, 'color:#a6a6a6'
+            53244, 53244, 'color:#a6a6a6',
+            65700, 65700, 'color:#1b9af5',
+            82512, 82512, 'color:#f5921b'
         ]
 
     ]);
@@ -71,7 +71,7 @@ function desenharGraficoBarrasAnos() {
     var opcoes = {
 
         title: 'Gastos por unidade de negócio',
-        height: 400,
+        height: 750,
         width: 1300,
         legend: 'none',
         hAxis: {
@@ -79,6 +79,14 @@ function desenharGraficoBarrasAnos() {
             gridlines: {
                 count: 3
             }
+        },
+        vAxis: {
+            gridlines: {
+                color: 'transparent'
+            },
+        },
+        bar: {
+            groupWidth: '30%'
         },
         isStacked: 'percent',
         titleTextStyle: {
