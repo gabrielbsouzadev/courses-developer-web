@@ -36,7 +36,8 @@ function desenharGraficoBarrasAnos() {
             }
         ],
         [
-            '2012',
+            // new Date(2012, 0, 2),
+            '2 de jan de 2012',
             47814, 47814, 'color:#a6a6a6',
             22552, 22552, 'color:#a6a6a6',
             65243, 65243, 'color:#1b9af5',
@@ -45,7 +46,8 @@ function desenharGraficoBarrasAnos() {
             12605, 12605, 'color:#a6a6a6'
         ],
         [
-            '2013',
+            // new Date(2013, 0, 5),
+            '5 de jan de 2013',
             46020, 46020, 'color:#a6a6a6',
             22100, 22100, 'color:#a6a6a6',
             64211, 64211, 'color:#1b9af5',
@@ -54,7 +56,8 @@ function desenharGraficoBarrasAnos() {
             12137, 12137, 'color:#a6a6a6'
         ],
         [
-            '2014',
+            // new Date(2014, 0, 3),
+            '3 de jan de 2014',
             53244, 53244, 'color:#a6a6a6',
             21131, 21131, 'color:#a6a6a6',
             65700, 65700, 'color:#1b9af5',
@@ -66,27 +69,18 @@ function desenharGraficoBarrasAnos() {
     ]);
 
     var opcoes = {
+
         title: 'Gastos por unidade de negócio',
         height: 400,
         width: 1300,
         legend: 'none',
         hAxis: {
-            // ticks: [
-            //     {v: 0, f: ''},
-            //     .165,
-            //     {v: .2428, f: '7,78%'},
-            //     {v: .4679, f: '22.51%'},
-            //     {v: .6594, f: '19,15%'},
-            //     {v: .9564, f: '29,7%'},
-            //     {v: 1, f: '4,35%'},
-            // ]        
+            format: 'MMM, yyyy',
+            gridlines: {
+                count: 3
+            }
         },
-        vAxis: {
-            direction: -1
-        },
-
         isStacked: 'percent',
-
         titleTextStyle: {
             color: '#5e5851',
             fontName: 'Arial',
@@ -100,6 +94,7 @@ function desenharGraficoBarrasAnos() {
             width: '78%',
             height: '70%'
         }
+
     };
 
     var grafico = new google.visualization.ColumnChart(document.getElementById('graficoBarrasAnos'));
