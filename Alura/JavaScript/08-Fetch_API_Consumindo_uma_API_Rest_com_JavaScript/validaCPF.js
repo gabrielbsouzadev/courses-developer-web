@@ -25,5 +25,30 @@ function somaNumerosCPF(cpf, totalDeDigitos, peso){
     }
 
     return soma
-    
+
 }
+
+function verificaDigito(cpf, totalDeDigitos, peso, digitoVerificacao){
+
+    const soma = somaNumerosCPF(cpf, totalDeDigitos, peso)
+    const resto = (soma * 10) % 11
+    return resto === digitoVerificacao
+
+}
+
+function verificaPrimeiroDigito(cpf) {
+
+    const peso = 11
+    const totalDeDigitosPrimeiraParte = 9
+    const digitoDeVerificacao = parseInt(cpf.substring(9, 10))
+
+    return verificaDigito(
+        cpf,
+        totalDeDigitosPrimeiraParte,
+        peso,
+        digitoDeVerificacao
+    )
+
+}
+
+console.log(verificaPrimeiroDigito);
