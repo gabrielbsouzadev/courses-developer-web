@@ -1,17 +1,12 @@
-const informacoesClientes = [
-    {
-        cpf: 18875539081,
-        nome: "Jairo"
-    },
-    {
-        cpf: 18875539081,
-        nome: "Monica"
-    }
-
-]
+fetch('http://localhost:4000/clientes')
+.then(resposta => {
+    return resposta.json();
+})
+.then ( json => {
+    console.log(json);  
+})
 
 const corpoTabela = document.querySelector("[data-conteudo-tabela]")
-
 
 const exibeCliente = (cpf, nome) => {
 
@@ -19,10 +14,8 @@ const exibeCliente = (cpf, nome) => {
 
     const conteudoLinha = 
     `
-    
         <td>${cpf}</td>
         <td>${nome}</td>
-    
     `
 
     linha.innerHTML = conteudoLinha
