@@ -1,4 +1,4 @@
-function verificaCPF(cpf) {
+function verificaCPFInvalidos(cpf) {
     const cpfInvalidos = [
         "11111111111",
         "22222222222",
@@ -28,11 +28,11 @@ function somaNumerosCPF(cpf, totalDeDigitos, peso){
 
 }
 
-function verificaDigito(cpf, totalDeDigitos, peso, digitoVerificacao){
+function verificaDigito(cpf, totalDeDigitos, peso, digitoDeVerificacao){
 
     const soma = somaNumerosCPF(cpf, totalDeDigitos, peso)
     const resto = (soma * 10) % 11
-    return resto === digitoVerificacao
+    return resto === digitoDeVerificacao
 
 }
 
@@ -51,4 +51,23 @@ function verificaPrimeiroDigito(cpf) {
 
 }
 
-console.log(verificaPrimeiroDigito);
+function verificaSegundoDigito(cpf) {
+    const peso = 12
+    const totalDeDigitosSegundaParte = 10
+    const digitoDeVerificacao = parseInt(cpf.substring(10,11))
+
+    return verificaDigito(
+        cpf,
+        totalDeDigitosSegundaParte,
+        peso,
+        digitoDeVerificacao
+    )
+}
+
+function validaCPF(cpf){
+    return(
+        verificaPrimeiroDigito(cpf) &&
+        verificaSegundoDigito(cpf) &&
+        verificaCPFInvalidos(cpf)
+    )
+}
