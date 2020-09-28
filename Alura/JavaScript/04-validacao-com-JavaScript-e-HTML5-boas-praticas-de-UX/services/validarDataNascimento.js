@@ -1,19 +1,18 @@
 export const validarDataNascimento = input => {
-    
-    const dataNascimento = new Date (input.value); //04/06/1995
-    const dataAtual = new Date (); //2020
+  const dataNascimento = new Date(input.value);
+  const dataAtual = new Date();
 
-    const dataFaz18 = new Date(
-        dataNascimento.getUTCFullYear() + 18,
-        dataNascimento.getUTCMonth(),
-        dataNascimento.getUTCDate()
-    ); // 04/06/2013
+  const dataFaz18 = new Date(
+    dataNascimento.getUTCFullYear() + 18,
+    dataNascimento.getUTCMonth(),
+    dataNascimento.getUTCDate()
+  );
 
-    if (dataFaz18 > dataAtual){
-        input.setCustomValidity("A idade minima é 18 anos");
-        return;
-    }
-
-    input.setCustomValidity("");
+  if (dataFaz18 > dataAtual) {
+    input.setCustomValidity("A idade mínima é de 18 anos");
     return;
+  }
+
+  input.setCustomValidity("");
+  return;
 };
