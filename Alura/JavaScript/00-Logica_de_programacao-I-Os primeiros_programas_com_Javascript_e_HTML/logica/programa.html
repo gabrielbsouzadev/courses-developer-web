@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        document.write("A idade do gabriel é ");
-        document.write(18 + 6)
+
+        //Programa qe calcula minha idade
+        var ano = Date.now()
+        document.write("Gabriel tem " + (ano - 1995) + " anos em milisegundos");
+
+        pulaLinha();
+        
+        //Programa que calcula média de idade
+
+        var nomeFilha1 = "Guaraciara";
+        var nomeFilha2 = "Perola";
+        var nomeFilha3 = "Linda";
+        var nomeFilho4 = "Gabriel";
+ 
+        var idadeGuaraciara = 15;
+        var idadePerola = 13;
+        var idadeLinda = 12;
+        var idadeGabriel = 60;
+
+        // mostra("A idade da " + nomeFilha1 + " é " + idadeGuaraciara);
+        // mostra("A idade da " + nomeFilha2 + " é " + idadePerola);
+        // mostra("A idade da " + nomeFilha3 + " é " + idadeLinda);
+        // mostra("A idade do " + nomeFilha4 + " é " + idadeGabriel);        
+
+        pulaLinha();
+
+        var totalIdades = idadeGuaraciara + idadeLinda + idadePerola + idadeGabriel;
+        mostra("A média da idade é " + Math.round(totalIdades / 3))
+
+        pulaLinha();
+
+        //funções
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var ano = 2020;
+
+        mostra("Gabriel tem " + (ano - 1995) + "anos");
+        mostra("Catarina tem " + (ano - 2001) + "anos");
+        
     </script>
 </body>
+
 </html>
