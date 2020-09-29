@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function pulaLinha(){
+            document.write("<br><br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        // var peso = 70;
+        // var altura = 1.70;
+
+        // var imc = (peso / (altura * altura))
+
+        // var pesoAmigo = 73;
+        // //var alturaAmigo = 1.71;
+
+        // function multiplicaAltura(alturaAmigo) {
+        //     return (alturaAmigo * alturaAmigo);
+        // }
+
+        // var imcAmigo = (pesoAmigo / (multiplicaAltura(1.71)))
+
+        // //console.log(imcAmigo);
+
+        // mostra("O imc é: " + imc);
+
+        // mostra("O imc é: " + imcAmigo);
+
+
+        // function calculaImc(peso, altura) {
+        //     var imc = (peso / (altura * altura))
+        //     mostra("O imc é: " + imc);
+        // }
+
+        // var pesoFlavio = 73;
+        // var alturaFlavio = 1.71;
+        // calculaImc(pesoFlavio, alturaFlavio);
+
+        // var pesoAmigo2 = 68;
+        // var alturaAmigo2 = 1.72;
+        // calculaImc(pesoAmigo2, alturaAmigo2);
+
+
+        // // Temos a função calculaImc(), que recebe parâmetros, realiza um cálculo, e exibe o resultado do IMC, mas e se quiséssemos somar os IMCs? Posteriormente, avaliaremos com esse resultado se estamos em boas condições de saúde, conforme os critérios da Organização Mundial da Saúde.
+
+        // function calculaImc(peso1, peso2, altura1, altura2) {
+        //     var imc1 = (peso1 / (altura1 * altura1));
+        //     var imc2 = (peso2 / (altura2 * altura2));
+
+        //     var imcTotal = imc1 + imc2;
+
+        //     mostra("A soma dos imc's é: " + imcTotal);
+        // }
+
+        // calculaImc(73, 68, 1.71, 1.72) 
+
+        //Queremos que a fórmula funcione de forma genérica, para que onde inserimos uma informação de peso e altura, ela nos dê o IMC calculado. Criaremos duas variáveis, a imcFlavio e a imcAmigo, e indicaremos que cada uma delas receberá as respectivas informações de peso e altura de cada um:
+
+        function calculaImc(peso, altura) {
+            var imc = peso / (altura * altura);
+            return imc;
+        }
+
+        var imcFlavio = calculaImc(73, 1.71);
+        var imcAmigo = calculaImc(68, 1.72);
+
+        mostra(imcFlavio);
+        mostra(imcAmigo);
+
+
+    </script>
+</body>
+</html>
