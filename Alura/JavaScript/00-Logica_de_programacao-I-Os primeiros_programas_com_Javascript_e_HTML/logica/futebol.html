@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Nosso objetivo será perguntar ao usuário o número de vitórias e empates do seu time. Se você não gostar de futebol, pode inserir números aleatórios. Criaremos uma variável vitorias que receberá um prompt():
+
+        function pulaLinha(){
+            document.write("<br><br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+        
+        //Temos que fazer uma pergunta ao usuário, no caso, utilizaremos "Entre com o número de vitórias":
+
+        //A próxima variável se chamará empates, e a pergunta será "Entre com o número de empates":
+        
+
+        function calculaPontos() {
+            
+            var vitorias = parseInt(prompt("Entre com o numero de vitorias"));
+            var empates = parseInt(prompt("Entre com o numero de empates"));
+
+            var calculoDePontos = (vitorias * 3) + empates
+
+            var resposta = document.write("O pontos do seu time é " + calculoDePontos);
+
+            return resposta;
+
+        }
+
+        calculaPontos();
+
+        //Importante lembrar que se quiséssemos ler um nome, por exemplo, não seria necessário utilizar a função parseInt(), porque neste caso queremos que isto seja considerado como texto. Sempre que formos ler uma entrada, e a intenção for trabalhar com números, temos que fazer o parseInt() para que o valor digitado, que por padrão é lido como texto, seja interpretado como um número.
+
+    </script>
+</body>
+</html>
