@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         function pulaLinha() {
@@ -20,26 +22,58 @@
             return Math.round(Math.random() * n);
         }
 
-        var numeroPensado = sorteia(10);
+        var numeroPensado = sorteia(10); //ou podemos colocar um numero fixo para testar o acerto
 
-        var chute = parseInt(prompt("digite seu chute!"));
+        //Usando o While para dar mais tentativas ao usuario
 
-        if (chute == numeroPensado) {
-            "Você acertou"
-        }        
+        var tentativas = 1
 
-        else {
-            // mostra("<h1>Você errou, o número pensado foi " + numeroPensado + "</h1>")
+        while (tentativas <= 3) {
 
-            if (chute > numeroPensado) {
-                mostra("Eu pensei no " + numeroPensado + ", o seu chute é maior que o numero pensado")
-            } else {
-                mostra("Eu pensei no " + numeroPensado + ", o seu chute é menor que o numero pensado")
+            var chute = parseInt(prompt("digite seu chute!"));
+           
+            if (chute == numeroPensado) {
+                mostra("Você acertou o numero pensado era " + numeroPensado)
+                break
             }
+
+            else {
+                    
+                mostra("Você errou")
+
+            }
+
+            tentativas++;
 
         }
 
-        
+
+
+        //nenhuma chancve para o usuario
+        // var chute = parseInt(prompt("digite seu chute!"));
+
+        // if (chute == numeroPensado) {
+        //     "Você acertou"
+        // }
+
+        // else {
+
+        //     // mostra("<h1>Você errou, o número pensado foi " + numeroPensado + "</h1>")
+
+        //     if (chute > numeroPensado) {
+        //         mostra("Eu pensei no " + numeroPensado + ", o seu chute é maior que o numero pensado")
+        //     } else {
+        //         mostra("Eu pensei no " + numeroPensado + ", o seu chute é menor que o numero pensado")
+        //     }
+
+        // }
+
+
+
+
+
+
     </script>
 </body>
+
 </html>
