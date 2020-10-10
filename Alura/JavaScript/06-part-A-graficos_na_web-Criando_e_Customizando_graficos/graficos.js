@@ -136,13 +136,18 @@ function desenharGraficos() {
 
     var dadosJson = $.ajax({
         // url: 'dados.json',
-        url: 'https://gist.githubusercontent.com/gabrielbsouzadev/dc63547be0fbc83173346d9aaeca9fad/raw/8f0e3fb30ccc5869cca9fa4b48b81d3739850649/dados.json',
+        //url: 'https://gist.githubusercontent.com/gabrielbsouzadev/dc63547be0fbc83173346d9aaeca9fad/raw/8f0e3fb30ccc5869cca9fa4b48b81d3739850649/dados.json',
+        url: 'http://localhost:3000/grafico/',
         dataType: 'json',
         async: false
     }).responseText;
+
+    
  
     //Colunas surpresa
     var tabela = new google.visualization.DataTable(dadosJson);
+
+    console.log(tabela[0]);
     
     //Antes os dados eram pegos da tabela abaixo
     // //Colunas
@@ -162,7 +167,7 @@ function desenharGraficos() {
     // ]);
 
     //Ordenando por ordem decrescente pelo indice 1
-    tabela.sort([{ column: 1, desc: true }]);
+    tabela[0].sort([{ column: 1, desc: true }]);
 
     // //Pegando o Jason Através da função .toJason() pelo Consoloe
     // var conversao = tabela.toJSON();
