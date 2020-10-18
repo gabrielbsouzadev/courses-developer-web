@@ -1,8 +1,19 @@
 <?php
 
+function sacar(array $conta, float $valorASacar): array
+{
+    if ($valorASacar > $conta['saldo']) {
+        exibeMensagem("Você não tem saldo suficiente");
+    } else {
+        $conta['saldo'] -= $valorASacar;
+    }
+
+    return $conta;
+}
+
 function exibeMensagem(string $mensagem)
 {
-    echo "$mensagem <br>";
+    echo $mensagem . PHP_EOL;
 }
 
 function depositar(array $conta, float $valorADepositar): array
@@ -15,22 +26,7 @@ function depositar(array $conta, float $valorADepositar): array
     return $conta;
 }
 
-function sacar(array $conta, float $valorASacar): array
+function titularComLetrasMaiusculas(array &$conta)
 {
-    if ($valorASacar > $conta['saldo']) {
-        exibeMensagem("Você não tem saldo suficiente");
-    } else {
-        $conta['saldo'] -= $valorASacar;
-    }
-
-    return $conta;
-}
-
-function titularComLetrasMaiuscular(array &$conta){
-    echo ($conta['titular']);
-    $conta['titular'] = strtoupper($conta['titular']);
-}
-
-foreach ($contasCorrentes as $cpf => $conta) {
-    exibeMensagem($cpf . " " . $conta['titular'] . ' ' . $conta['saldo']);
+    $conta['titular'] = mb_strtoupper($conta['titular']);
 }
