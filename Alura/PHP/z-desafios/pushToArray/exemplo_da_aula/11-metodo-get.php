@@ -43,55 +43,18 @@ require_once("./inc/head.php");
                     <label for="estado">UF</label>
                     <select id="estado" class="form-control" name="inputEstado">
                         <option selected disabled>UF</option>
-
+                        <!-- UM LOOP FOREACH DE BRINDE PARA VOCÊS! -->
 
                         <script>
-                            // var contador = 1
-
-                            // while (contador <= 2) {
-                            //     var ufs = prompt("informe a UF do Estado")
-
-                            //     for (let index = 0; index < estado.length; index++) {
-
-                            //         if (estado[index] == ufs) {
-
-                            //         }
-
-                            //     }
-                            // }
-
-                            while (contador <= 2) {
-
-                                var ingrediente = prompt("Informe o ingrediente " + contador);
-
-                                var existe = false;
-
-                                for (var posicao = 0; posicao < ingredientes.length; posicao++) {
-
-                                    if (ingredientes[posicao] == ingrediente) {
-
-                                        existe = true;
-                                        alert("Esse ingrediente ja existe na sua lista")
-                                        break;
-
-                                    }
-
-                                }
-
-                                if (existe == false) {
-                                    ingredientes.push(ingrediente + " <br>");
-                                    contador++;
-                                }
+                            
+                            for (let index = 0; index < ufs.length; index++) {
+                                document.write("<option>" + ufs[index] + "</option>");
 
                             }
+
                         </script>
 
-                        <!-- UM LOOP FOREACH DE BRINDE PARA VOCÊS! -->
-                        <?php foreach ($ufs as $uf) : ?>
 
-                            <option><?= $uf; ?></option>
-
-                        <?php endforeach; ?>
                         <!-- /UM LOOP FOREACH DE BRINDE PARA VOCÊS! -->
 
                     </select>

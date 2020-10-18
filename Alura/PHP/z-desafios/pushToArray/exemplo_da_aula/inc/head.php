@@ -42,3 +42,66 @@
 // ];
 
 ?>
+
+<script>
+    let ufs = [
+        "AC",
+        "AL",
+        "AM",
+        "AP",
+        "BA",
+        "CE",
+        "DF",
+        "ES",
+        "GO",
+        "MA",
+        "MG",
+        "MS",
+        "MT",
+        "PA",
+        "PB",
+        "PE",
+        "PI",
+        "PR",
+        "RJ",
+        "RN",
+        "RO",
+        "RR",
+        "RS",
+        "SC",
+        "SP",
+        "SE",
+        "TO"
+    ]
+
+    // var quantidade = parseInt(prompt("Quantos ufs você vai adicionar?"));
+
+    // var contador = 1;
+
+
+    // while (contador <= quantidade) {
+
+    //     var uf = prompt("Informe o uf " + contador);
+
+    //     var existe = false;
+
+    //     for (var posicao = 0; posicao < ufs.length; posicao++) {
+
+    //         if (ufs[posicao] == uf) {
+
+    //             existe = true;
+    //             alert("Esse uf ja existe na sua lista")
+    //             break;
+
+    //         }
+
+    //     }
+
+    //     if (existe == false) {
+    //         ufs.push(uf + " <br>");
+    //         contador++;
+    //     }
+
+    // }
+    
+</script>
