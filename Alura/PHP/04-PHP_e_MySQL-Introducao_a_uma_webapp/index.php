@@ -3,8 +3,8 @@
 
 require 'config.php';
 
-require 'Artigo.php';
-$artigo = new Artigo();
+require 'src/Artigo.php';
+$artigo = new Artigo($mysql);
 $artigos = $artigo->exibirTodos();
 
 ?>
@@ -27,7 +27,7 @@ $artigos = $artigo->exibirTodos();
                 
         ?>
         <h2>
-            <a href="<?= $artigo['link'] ?>">
+            <a href="artigo.php?id=<?= $artigo['id']; ?>">
                 <?= $artigo['titulo']; ?>
             </a>
         </h2>
