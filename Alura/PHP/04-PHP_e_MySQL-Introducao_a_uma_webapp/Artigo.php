@@ -1,8 +1,6 @@
 <?php
 
-
-
-class Artigo
+class Artigo 
 {
     public function exibirTodos(): array
     {
@@ -29,6 +27,5 @@ class Artigo
         return $artigos;
     }
 }
-
 
 ?>

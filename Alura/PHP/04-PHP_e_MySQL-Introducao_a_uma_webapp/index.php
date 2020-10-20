@@ -1,6 +1,9 @@
 <?php
 
-include_once 'Artigo.php';
+
+require 'config.php';
+
+require 'Artigo.php';
 $artigo = new Artigo();
 $artigos = $artigo->exibirTodos();
 
