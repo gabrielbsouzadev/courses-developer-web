@@ -1,6 +1,5 @@
 <?php
 
-
 require 'config.php';
 
 require 'src/Artigo.php';
