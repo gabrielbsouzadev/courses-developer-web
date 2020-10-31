@@ -1,5 +1,5 @@
 <?php
-
+//O namespace precisa ser a primeira coisa a ser chamanda na pagina
 namespace Alura;
 
 require 'autoload.php';
