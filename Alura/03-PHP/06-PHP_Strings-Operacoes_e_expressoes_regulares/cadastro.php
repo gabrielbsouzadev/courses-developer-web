@@ -28,7 +28,7 @@ $contato = new App\Alura\Contato($_POST['email']);
     <li class="list-group-item">Usuário: <?= $contato->getusuario(); ?> </li>
     <li class="list-group-item">Senha: </li>
     <li class="list-group-item">Telefone: </li>
-    <li class="list-group-item">Email: </li>
+    <li class="list-group-item">Email: <?= $contato->getemail(); ?></li>
     <li class="list-group-item">Endereço: </li>
 </ul>
 </div>
