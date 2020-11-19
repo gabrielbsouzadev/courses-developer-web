@@ -1,4 +1,5 @@
 <?php include_once("includes/header.php") ?>
+<?php include_once("includes/formatador.php") ?>
 <?php require_once("controller/ComprasController.php"); ?>
 
 <div class="bg-hero">
@@ -33,28 +34,28 @@
                                             <tbody>
                                                 <tr>
                                                     <td class='text-center'>
-                                                        <?php echo $cliente->nome ?>
+                                                        <?= $cliente->nome ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        <?php echo $cliente->cpf_cnpj; ?>
+                                                        <?= formataCpfCnpj($cliente->cpf_cnpj); ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        <?php echo $cliente->telefone ?>
+                                                        <?= formataTelefone($cliente->telefone) ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        <?php echo $viagem->data_ida ?>
+                                                        <?= formataData($viagem->data_ida) ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        <?php echo $viagem->data_volta ?>
+                                                        <?= formataData($viagem->data_volta) ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        <?php echo $viagem->preco ?>
+                                                        <?= formataPreco($viagem->preco) ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        <?php echo $cliente->email ?>
+                                                        <?= $cliente->email ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        <?php echo $cliente->cep ?>
+                                                        <?= formataCep($cliente->cep) ?>
                                                     </td>
                                                 </tr>
                                             </tbody>

@@ -38,10 +38,10 @@ class Cliente
     if (!$validadorCPF->ehValido($cpf_cnpj)) throw new Exception("CPF Inválido");
 
     $this->nome = $nome;
-    $this->cpf_cnpj = $cpf_cnpj;
-    $this->telefone = $telefone;
+    $this->cpf_cnpj = $this->removeFomatacao($cpf_cnpj);
+    $this->telefone = $this->removeFomatacao($telefone);
     $this->email = $email;
-    $this->cep = $cep;
+    $this->cep = $this->removeFomatacao($cep);
     $this->endereco = $endereco;
     $this->bairro = $bairro;
     $this->numero = $numero;
@@ -78,5 +78,11 @@ class Cliente
     } else {
       return false;
     }
+  }
+  
+  function removeFomatacao($info)
+  {
+    $dado = str_replace([".", "-", "/", "(", ")", " "], "", $info);
+    return $dado;
   }
 }
