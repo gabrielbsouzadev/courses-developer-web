@@ -34,28 +34,28 @@
                                             <tbody>
                                                 <tr>
                                                     <td class='text-center'>
-                                                        <?= $cliente->nome ?>
+                                                        <?php echo $cliente->nome ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        <?= formataCpfCnpj($cliente->cpf_cnpj); ?>
+                                                        <?php echo formataCpfCnpj($cliente->cpf_cnpj); ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        <?= formataTelefone($cliente->telefone) ?>
+                                                        <?php echo formataTelefone($cliente->telefone) ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        <?= formataData($viagem->data_ida) ?>
+                                                        <?php echo formataData($viagem->data_ida) ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        <?= formataData($viagem->data_volta) ?>
+                                                        <?php echo formataData($viagem->data_volta) ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        <?= formataPreco($viagem->preco) ?>
+                                                        <?php echo formataPreco($viagem->preco) ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        <?= $cliente->email ?>
+                                                        <?php echo $cliente->email ?>
                                                     </td>
                                                     <td class='text-center'>
-                                                        <?= formataCep($cliente->cep) ?>
+                                                        <?php echo formataCep($cliente->cep) ?>
                                                     </td>
                                                 </tr>
                                             </tbody>
