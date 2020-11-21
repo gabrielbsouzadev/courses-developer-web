@@ -14,7 +14,7 @@
         <form action="cadastro.php" method="post">
             <div class="form-group">
                 <label for="nome">Nome: </label>
-                <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome">
+                <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome completo">
             </div>
 
             <div class="form-group">
@@ -37,7 +37,7 @@
 
             <div class="form-group">
                 <label for="telefone">Telefone:</label>
-                <input type="text" id="telefone" name="telefone" class="form-control" placeholder="Digite a sua senha">
+                <input type="text" id="telefone" name="telefone" class="form-control" placeholder="9999-9999">
             </div>
 
             <div class="form-group">
