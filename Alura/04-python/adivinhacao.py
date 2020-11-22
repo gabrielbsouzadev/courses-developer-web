@@ -1,1 +1,0 @@
-print("bem vindo ao jogo de adivinhacao")
