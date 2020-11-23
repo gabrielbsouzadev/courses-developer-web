@@ -29,3 +29,14 @@ Digite o seu número: 42
 <type 'str'>
 
 O retorno dessa função será sempre uma string, equivalente à função input do Python 3, mas ela não existe nessa versão.
+
+# range
+A função range possui os seguintes parâmetros:
+
+range(start, stop, [step])
+
+# Continue e Break no laço FOR e WHILE
+
+Para controlar melhor os laços, existem os comandos break e continue, que são utilizados dentro de um laço (for ou while). Ambos fazem parte do controle de fluxo (control flow).
+
+A diferença é que o break, quando for executado, sai do bloco do laço abruptamente, enquanto continue apenas pula para próxima iteração.
