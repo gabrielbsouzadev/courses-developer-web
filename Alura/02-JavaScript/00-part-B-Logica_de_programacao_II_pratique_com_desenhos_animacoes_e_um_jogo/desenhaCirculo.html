@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+</body>
+
+</html>
+
+<script>
+    var tela = document.querySelector('canvas')
+    var pincel = tela.getContext('2d')
+    pincel.fillStyle = 'lightgray'
+    pincel.fillRect(0, 0, 600, 400)
+
+    function desenhaCirculo(x, y, raio, cor) {
+        pincel.fillStyle = cor;
+        pincel.beginPath()
+        pincel.arc(x, y, raio, 0, 2 * Math.PI )
+        pincel.fill()
+    }
+
+    function desenhaTexto(texto, x , y) {
+        pincel.font='20px Georgia';
+        pincel.fillStyle='black';
+        pincel.fillText(texto, x, y);    
+    }
+
+    desenhaTexto("My tchuca", 50, 30);
+
+    function desenhaTextoNome(texto, x , y) {
+        pincel.font='20px Georgia';
+        pincel.fillStyle='lightpink';
+        pincel.fillText(texto, x, y);    
+    }
+
+    desenhaTextoNome("My Flower", 100, 60);
+
+    function desenhaNome(texto, x , y) {
+        pincel.font='20px Georgia';
+        pincel.fillStyle='lightblue';
+        pincel.fillText(texto, x, y);    
+    }
+
+    desenhaNome("Catarina Segatti", 150, 90);
+
+
+    function desenhaFlor(x, y) {
+        desenhaCirculo(x, y+40, 20, 'blue')
+        desenhaCirculo(x, y, 20, 'red')
+        desenhaCirculo(x, y-40, 20, 'yellow')
+        desenhaCirculo(x-40, y, 20, 'orange')
+        desenhaCirculo(x+40, y, 20, 'black')
+    }
+
+    desenhaFlor(300, 200);
+
+</script>
