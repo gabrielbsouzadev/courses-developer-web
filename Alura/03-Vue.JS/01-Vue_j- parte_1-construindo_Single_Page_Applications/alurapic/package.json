@@ -2,7 +2,7 @@
   "name": "alurapic",
   "description": "A Vue.js project",
   "version": "1.0.0",
-  "author": "gabrielbsouzadev <gabrielbsouzadev@gmail.com>",
+  "author": "",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -10,7 +10,9 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "vue": "^2.5.11"
+    "vue": "^2.5.11",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.4.9"
   },
   "browserslist": [
     "> 1%",

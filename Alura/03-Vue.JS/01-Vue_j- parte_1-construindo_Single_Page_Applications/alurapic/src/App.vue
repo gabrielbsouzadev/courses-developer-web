@@ -1,39 +1,50 @@
-<template>
-  <div>
-    <h1>{{ titulo }}</h1>
+<!-- alurapic/src/App.vue -->
 
-    <ul>
-      <li v-for="foto of fotos">
-        <img :src="foto.url" :alt="foto.titulo">
-      </li>
-    </ul>
+<template>
+  <div class="corpo">
+
+    <meu-menu :rotas="routes"/>
+
+    <transition name="pagina">
+      <router-view></router-view>
+    </transition>
 
   </div>
 </template>
-
 <script>
+
+import { routes }  from './routes';
+import Menu from './components/shared/menu/Menu.vue';
+
 export default {
+
+  components: {
+    'meu-menu' : Menu
+  },
 
   data() {
 
     return {
 
-      titulo: 'Alurapic', 
-      fotos: [
-        {
-          url: 'http://tudosobrecachorros.com.br/wp-content/uploads/cachorro-independente.jpg',
-          titulo: 'cachorro'
-        },
-        {
-          url: 'http://tudosobrecachorros.com.br/wp-content/uploads/cachorro-independente.jpg',
-          titulo: 'Cachorrão'
-        }
-      ]
+      routes
     }
+
   }
+
 }
-
 </script>
-
 <style>
+
+  .corpo {
+    font-family: Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 96%;
+  }
+
+  .pagina-enter-active, .pagina-leave-active {
+    transition: opacity .3s
+  }
+  .pagina-enter, .pagina-leave-active {
+    opacity: 0
+  }
 </style>
