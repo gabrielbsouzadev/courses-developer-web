@@ -1,0 +1,1 @@
+Utilizar Versão Version 7.3.7 do PHP para este projeto
