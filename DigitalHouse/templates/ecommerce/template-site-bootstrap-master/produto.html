@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Site Bootstrap</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-ekOryaXPbeCpWQNxMwSWVvQ0+1VrStoPJq54shlYhR8HzQgig1v5fas6YgOqLoKz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/img/logo.png" alt="Logo" width="30" height="30" class="mr-2"> Decô
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Início <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categorias
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="./categoria.html">Objetos</a>
+                            <a class="dropdown-item" href="./categoria.html">Coisas</a>
+                            <a class="dropdown-item" href="./categoria.html">Decoração</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <header class="topo-pagina p-3 mb-5" id="topoProduto">
+            <h1 class="p-3">Produto</h1>
+            <p class="px-3 pt-0 topo">Produto ponta de linha, topzera! Não perca essa oportunidade - quem avisa amigo é!</p>
+        </header>
+        <section class="container my-3">
+            <article class="row">
+                <section class="col-md-5">
+                    <div id="carrosselProduto" class="carousel slide carousel-fade" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carrosselProduto" data-slide-to="0" class="bg-info active"></li>
+                            <li data-target="#carrosselProduto" data-slide-to="1" class="bg-info"></li>
+                            <li data-target="#carrosselProduto" data-slide-to="2" class="bg-info"></li>
+                            <li data-target="#carrosselProduto" data-slide-to="3" class="bg-info"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" id="produtoImg01">
+                                <img src="./assets/img/produto-01-440x440.jpg" alt="Produto da hora!">
+                            </div>
+                            <div class="carousel-item" id="produtoImg02">
+                                <img src="./assets/img/produto-02-440x440.jpg" alt="Produto da hora!">
+                            </div>
+                            <div class="carousel-item" id="produtoImg03">
+                                <img src="./assets/img/produto-03-440x440.jpg" alt="Produto da hora!">
+                            </div>
+                            <div class="carousel-item" id="produtoImg04">
+                                <img src="./assets/img/produto-04-440x440.jpg" alt="Produto da hora!">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-md-7 my-3">
+                    <h2>Produto Doideira</h2>
+                    <small>SKU 123-OIM4-ES9</small>
+                    <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem iure, esse totam tenetur minima sapiente cum? At, voluptatem saepe. Voluptates adipisci culpa cum ullam soluta aliquid deleniti natus tenetur perferendis!</p>
+                    <form action="carrinho.html" method="post" id="formComprar">
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="tamanho">Tamanhos</label>
+                                <select class="form-control" name="tamanho" id="tamanho" required="">
+                                    <option value="" disabled="" selected="">--</option>
+                                    <option value="PP">PP</option>
+                                    <option value="P">P</option>
+                                    <option value="M">M</option>
+                                    <option value="G">G</option>
+                                    <option value="GG">GG</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="quantidade">Quantidade</label>
+                                <input type="number" class="form-control" id="quantidade" step="1" min="1" value="1" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="mx-auto my-2 btn btn-info btn-lg col-md-3">Comprar</button>
+                        </div>
+                    </form>
+                </section>
+                <section class="col-12 my-5">
+                    <div class="accordion" id="accordionTabsProduto">
+                        <div class="card">
+                            <div class="card-header" id="aba01">
+                                <h5 class="mb-0">
+                                <button class="btn text-info bg-transparent col-12 collapsed" type="button" data-toggle="collapse" data-target="#especificacoes" aria-expanded="false" aria-controls="especificacoes">
+                                    Especificações Técnicas <i class="fas fa-chevron-down ml-3 font-weight-light"></i>
+                                </button>
+                            </h5>
+                            </div>
+                            <div id="especificacoes" class="collapse" aria-labelledby="aba01" data-parent="#accordionTabsProduto">
+                                <div class="card-body">
+                                    <table class="table my-3 text-center">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th scope="col">Tamanho</th>
+                                                <th scope="col"><span class="d-none d-md-block">Largura</span><span class="d-block d-md-none">L</span></th>
+                                                <th scope="col"><span class="d-none d-md-block">Profundidade</span><span class="d-block d-md-none">P</span></th>
+                                                <th scope="col"><span class="d-none d-md-block">Comprimento</span><span class="d-block d-md-none">C</span></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">PP</th>
+                                                <td>30 cm</td>
+                                                <td>30 cm</td>
+                                                <td>30 cm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">P</th>
+                                                <td>35 cm</td>
+                                                <td>35 cm</td>
+                                                <td>35 cm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">M</th>
+                                                <td>40 cm</td>
+                                                <td>40 cm</td>
+                                                <td>40 cm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">G</th>
+                                                <td>45 cm</td>
+                                                <td>45 cm</td>
+                                                <td>45 cm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">GG</th>
+                                                <td>50 cm</td>
+                                                <td>50 cm</td>
+                                                <td>50 cm</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="aba02">
+                                <h5 class="mb-0">
+                                <button class="btn text-info bg-transparent col-12 collapsed" type="button" data-toggle="collapse" data-target="#faq" aria-expanded="false" aria-controls="faq">
+                                    Dúvidas Frequentes <i class="fas fa-chevron-down ml-3 font-weight-light"></i>
+                                </button>
+                            </h5>
+                            </div>
+                            <div id="faq" class="collapse" aria-labelledby="aba02" data-parent="#accordionTabsProduto">
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            <h4>Dúvida 1</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, unde, id enim numquam, eum quod provident aliquam sit nobis temporibus optio voluptas voluptate quos cupiditate tenetur. Praesentium nam accusamus harum.</p>
+                                        </li>
+                                        <li>
+                                            <h4>Dúvida 2</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, unde, id enim numquam, eum quod provident aliquam sit nobis temporibus optio voluptas voluptate quos cupiditate tenetur. Praesentium nam accusamus harum.</p>
+                                        </li>
+                                        <li>
+                                            <h4>Dúvida 3</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, unde, id enim numquam, eum quod provident aliquam sit nobis temporibus optio voluptas voluptate quos cupiditate tenetur. Praesentium nam accusamus harum.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="aba03">
+                                <h5 class="mb-0">
+                                <button class="btn text-info bg-transparent col-12 collapsed" type="button" data-toggle="collapse" data-target="#garantiaETermos" aria-expanded="false" aria-controls="garantiaETermos">
+                                    Garantia, Troca e Devolução <i class="fas fa-chevron-down ml-3 font-weight-light"></i>
+                                </button>
+                            </h5>
+                            </div>
+                            <div id="garantiaETermos" class="collapse" aria-labelledby="aba03" data-parent="#accordionTabsProduto">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <div class="card mt-3 my-md-5 mx-0 p-0" id="bannerDestaque01">
+                <a href="./contato.html" title="Entre em contato conosco!" class="m-auto">
+                    <h3 class="text-center">Entre em contato e solicite um orçamento para pedidos em grandes quantidades</h3>
+                </a>
+            </div>
+            <section id="catMaisVendidos" class="row px-3 px-md-0 mb-5">
+                <h2 class="col-12 text-center text-info mt-5 mb-4">Mais Vendidos</h2>
+                <div id="carrosselMaisVendidos" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators indicators-mais-vendidos">
+                        <li data-target="#carrosselMaisVendidos" data-slide-to="0" class="bg-info active"></li>
+                        <li data-target="#carrosselMaisVendidos" data-slide-to="1" class="bg-info"></li>
+                        <li data-target="#carrosselMaisVendidos" data-slide-to="2" class="bg-info"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" id="maisVendidos01">
+                            <div class="card-deck">
+                                <div class="card promo">
+                                    <img class="card-img-top" src="./assets/img/produto-01-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X1</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                    <span class="badge badge-pill badge-info">PROMO</span>
+                                </div>
+                                <div class="card d-none d-md-block">
+                                    <img class="card-img-top" src="./assets/img/produto-02-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X2</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                </div>
+                                <div class="card d-none d-md-block">
+                                    <img class="card-img-top" src="./assets/img/produto-03-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X3</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="maisVendidos02">
+                            <div class="card-deck">
+                                <div class="card promo">
+                                    <img class="card-img-top" src="./assets/img/produto-04-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X1</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                    <span class="badge badge-pill badge-info">PROMO</span>
+                                </div>
+                                <div class="card d-none d-md-block">
+                                    <img class="card-img-top" src="./assets/img/produto-05-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X2</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                </div>
+                                <div class="card d-none d-md-block">
+                                    <img class="card-img-top" src="./assets/img/produto-06-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X3</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="maisVendidos03">
+                            <div class="card-deck">
+                                <div class="card promo">
+                                    <img class="card-img-top" src="./assets/img/produto-07-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X1</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                    <span class="badge badge-pill badge-info">PROMO</span>
+                                </div>
+                                <div class="card d-none d-md-block">
+                                    <img class="card-img-top" src="./assets/img/produto-08-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X2</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                </div>
+                                <div class="card d-none d-md-block">
+                                    <img class="card-img-top" src="./assets/img/produto-01-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X3</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="catMaisProcurados" class="row px-3 px-md-0 mb-5">
+                <h2 class="col-12 text-center text-info mt-5 mb-4">Mais Procurados</h2>
+                <div id="carrosselMaisProcurados" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators indicators-mais-procurados">
+                        <li data-target="#carrosselMaisProcurados" data-slide-to="0" class="bg-info active"></li>
+                        <li data-target="#carrosselMaisProcurados" data-slide-to="1" class="bg-info"></li>
+                        <li data-target="#carrosselMaisProcurados" data-slide-to="2" class="bg-info"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" id="maisProcurados01">
+                            <div class="card-deck">
+                                <div class="card promo">
+                                    <img class="card-img-top" src="./assets/img/produto-08-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X1</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                    <span class="badge badge-pill badge-info">PROMO</span>
+                                </div>
+                                <div class="card d-none d-md-block">
+                                    <img class="card-img-top" src="./assets/img/produto-07-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X2</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                </div>
+                                <div class="card d-none d-md-block">
+                                    <img class="card-img-top" src="./assets/img/produto-06-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X3</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="maisProcurados02">
+                            <div class="card-deck">
+                                <div class="card promo">
+                                    <img class="card-img-top" src="./assets/img/produto-05-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X1</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                    <span class="badge badge-pill badge-info">PROMO</span>
+                                </div>
+                                <div class="card d-none d-md-block">
+                                    <img class="card-img-top" src="./assets/img/produto-04-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X2</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                </div>
+                                <div class="card d-none d-md-block">
+                                    <img class="card-img-top" src="./assets/img/produto-03-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X3</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" id="maisProcurados03">
+                            <div class="card-deck">
+                                <div class="card promo">
+                                    <img class="card-img-top" src="./assets/img/produto-02-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X1</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                    <span class="badge badge-pill badge-info">PROMO</span>
+                                </div>
+                                <div class="card d-none d-md-block">
+                                    <img class="card-img-top" src="./assets/img/produto-01-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X2</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                </div>
+                                <div class="card d-none d-md-block">
+                                    <img class="card-img-top" src="./assets/img/produto-08-440x440.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Produto X3</h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p class="preco-vitrine text-info d-inline">R$ 99.99</p>
+                                        <a href="produto.html" class="btn btn-info float-right">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="container-fluid mt-5 mb-0 mx-0 pt-5 px-0">
+        <div class="bg-dark text-white mx-0 p-5">
+            <div class="d-flex flex-row flex-nowrap justify-content-center redes-sociais">
+                <a href="#" target="_blank" title="Acesse nosso Insta"><i class="fab fa-instagram mr-2"></i></a>
+                <a href="#" target="_blank" title="Acesse nosso Face"><i class="fab fa-facebook mr-2"></i></a>
+                <a href="#" target="_blank" title="Acesse nosso Twitter"><i class="fab fa-twitter mr-2"></i></a>
+                <a href="#" target="_blank" title="Acesse nosso Pinterest"><i class="fab fa-pinterest mr-2"></i></a>
+            </div>
+            <div class="d-flex flex-row flex-nowrap justify-content-center mt-3">
+                <small>Fulanos &copy; | CNPJ 01.012.012/0001-99 | <a href="#" title="Políticas e Termos" data-toggle="modal" data-target="#modalPoliticas">Políticas de Privacidade</a> | <a href="#" title="Trocas e Devoluções" data-toggle="modal" data-target="#modalTrocas">Trocas e Devoluções</a></small>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal Login -->
+    <div class="modal fade mt-5" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div id="carrosselModalLogin" class="carousel slide carousel-fade" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item h-auto active" id="carrosselLoginItem">
+                        <div class="modal-content" id="modalContentLogin">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLoginLabel">Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" method="post" id="formLogin">
+                                    <div class="form-group">
+                                        <label for="emailLogin">email</label>
+                                        <input type="email" class="form-control" id="emailLogin" aria-describedby="emailLoginHelp" placeholder="Insira seu email">
+                                        <small id="emailLoginHelp" class="form-text text-muted">Não se preocupe, não vendemos mailing lists.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="senhaLogin">Senha</label>
+                                        <input type="password" class="form-control" id="senhaLogin" placeholder="Insira sua senha" aria-describedby="senhaLoginHelp" autocomplete>
+                                        <small id="senhaLoginHelp" class="form-text text-muted">Insira uma maiúscula, uma minúscula e um número pelo menos.</small>
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="aceiteLogin" checked>
+                                        <label class="form-check-label" for="aceiteLogin">Estou de acordo com os termos, pode vender meus dados!</label>
+                                    </div>
+                                    <div class="form-group col-auto clearfix px-0">
+                                        <button type="submit" class="btn btn-info float-right ml-2">Logar</button>
+                                        <button type="reset" class="btn btn-secondary float-right">Limpar</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#carrosselModalLogin" class="text-info" role="button" data-slide="next">
+                                    <small class="d-block w-100 text-muted">Ops! Ainda não tenho conta, quero <span class="text-info">me cadastrar</span>.</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-auto" id="carrosselCadastroItem">
+                        <div class="modal-content" id="modalContentCadastro">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalCadastroLabel">Cadastro</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" method="post" id="formCadastro">
+                                    <div class="form-group">
+                                        <label for="nomeCadastro">Nome Completo</label>
+                                        <input type="text" class="form-control" id="nomeCadastro" aria-describedby="nomeCadastroHelp" placeholder="Insira seu nome">
+                                        <small id="nomeCadastroHelp" class="form-text text-muted">Insira seu nome completo, por favor.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emailCadastro">email</label>
+                                        <input type="email" class="form-control" id="emailCadastro" aria-describedby="emailCadastroHelp" placeholder="Insira seu email">
+                                        <small id="emailCadastroHelp" class="form-text text-muted">Não se preocupe, não vendemos mailing lists.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="senhaCadastro">Senha</label>
+                                        <input type="password" class="form-control" id="senhaCadastro" placeholder="Insira sua senha" aria-describedby="senhaCadastroHelp" autocomplete>
+                                        <small id="senhaCadastroHelp" class="form-text text-muted">Insira uma maiúscula, uma minúscula e um número pelo menos.</small>
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="aceiteCadastro" checked>
+                                        <label class="form-check-label" for="aceiteCadastro">Estou de acordo com os termos, pode vender meus dados!</label>
+                                    </div>
+                                    <div class="form-group col-auto clearfix px-0">
+                                        <button type="submit" class="btn btn-info float-right ml-2">Cadastrar</button>
+                                        <button type="reset" class="btn btn-secondary float-right">Limpar</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#carrosselModalLogin" class="text-info" role="button" data-slide="prev">
+                                    <small class="d-block w-100 text-muted">Ops! Já tenho conta, quero <span class="text-info">me logar</span>.</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal Login -->
+    <!-- Modal Políticas -->
+    <div class="modal fade" id="modalPoliticas" tabindex="-1" role="dialog" aria-labelledby="modalPoliticasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPoliticasLabel">Políticas e Termos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore debitis amet at harum tenetur! Modi blanditiis maiores nesciunt velit labore dolorem reiciendis, deserunt, quod aut autem ducimus veritatis, libero quae.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore debitis amet at harum tenetur! Modi blanditiis maiores nesciunt velit labore dolorem reiciendis, deserunt, quod aut autem ducimus veritatis, libero quae.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore debitis amet at harum tenetur! Modi blanditiis maiores nesciunt velit labore dolorem reiciendis, deserunt, quod aut autem ducimus veritatis, libero quae.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore debitis amet at harum tenetur! Modi blanditiis maiores nesciunt velit labore dolorem reiciendis, deserunt, quod aut autem ducimus veritatis, libero quae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal Políticas -->
+    <!-- Modal Trocas -->
+    <div class="modal fade" id="modalTrocas" tabindex="-1" role="dialog" aria-labelledby="modalTrocasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTrocasLabel">Trocas e Devoluções</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore debitis amet at harum tenetur! Modi blanditiis maiores nesciunt velit labore dolorem reiciendis, deserunt, quod aut autem ducimus veritatis, libero quae.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore debitis amet at harum tenetur! Modi blanditiis maiores nesciunt velit labore dolorem reiciendis, deserunt, quod aut autem ducimus veritatis, libero quae.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore debitis amet at harum tenetur! Modi blanditiis maiores nesciunt velit labore dolorem reiciendis, deserunt, quod aut autem ducimus veritatis, libero quae.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore debitis amet at harum tenetur! Modi blanditiis maiores nesciunt velit labore dolorem reiciendis, deserunt, quod aut autem ducimus veritatis, libero quae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal Trocas -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
